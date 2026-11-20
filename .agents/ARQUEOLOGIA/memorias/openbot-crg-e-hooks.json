@@ -1,0 +1,11 @@
+{
+  "slug": "openbot-crg-e-hooks",
+  "scope": "project",
+  "title": "OpenBot: CRG local e hooks do projeto",
+  "trigger": "Ao consultar grafo estrutural, instalar CRG ou commitar no openbot",
+  "body": "O grafo estrutural vive em .agents/CODE-REVIEW-GRAPH (code-review-graph 2.4.0+dex.1, schema v15, 749 MB, ignorado pelo .gitignore interno). Build: code-review-graph build --repo . --data-dir .agents/CODE-REVIEW-GRAPH; o primeiro build encerrou antes do pos-processamento, entao rodar postprocess. O bun install ativa core.hooksPath=.githooks via prepare; o pre-commit do projeto roda check:staged, check:ui e staged-typecheck. Hooks do CRG em .git/hooks ficam inertes com esse hooksPath; os hooks de plataforma (Codex/Claude) atualizam o grafo. Indice e limites em .agents/CODE-REVIEW-GRAPH-INDEX.md.",
+  "tags": [
+    "#openbot/ferramentas",
+    "#openbot/crg"
+  ]
+}

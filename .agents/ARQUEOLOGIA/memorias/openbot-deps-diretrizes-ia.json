@@ -1,0 +1,11 @@
+{
+  "slug": "openbot-deps-diretrizes-ia",
+  "scope": "project",
+  "title": "OpenBot: quatro dependencias diretas trazem AGENTS/CLAUDE",
+  "trigger": "Ao mexer em effect, elysia, react-native-keyboard-controller ou react-native-webrtc",
+  "body": "Quatro dependencias diretas do openbot embarcam diretrizes de IA: effect (AGENTS.md e CLAUDE.md: preferir Effect.gen/Effect.fn, sem wrapper de Promise), elysia (regras de contribuicao do repo), react-native-keyboard-controller (regras de issue e reproducao) e react-native-webrtc (visao do projeto e comandos nativos). Ponteiro em .agents/ARQUEOLOGIA/DEPENDENCIES.md; nunca copiar as skills para o registry. Transitivas com o mesmo tipo de arquivo: bun-types, cytoscape, expo-modules-macros, thread-stream. Revalidar no upgrade com a varredura --hidden --no-ignore.",
+  "tags": [
+    "#openbot/dependencias",
+    "#openbot/diretrizes-ia"
+  ]
+}

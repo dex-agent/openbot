@@ -1,0 +1,48 @@
+{
+  "packages_with_guidance": 8,
+  "files": 11,
+  "direct_dependencies_with_guidance": [
+    {
+      "name": "effect",
+      "files": 2,
+      "scope": "runtime",
+      "license": "MIT"
+    },
+    {
+      "name": "elysia",
+      "files": 2,
+      "scope": "runtime",
+      "license": "MIT"
+    },
+    {
+      "name": "react-native-keyboard-controller",
+      "files": 1,
+      "scope": "runtime",
+      "license": "MIT"
+    },
+    {
+      "name": "react-native-webrtc",
+      "files": 1,
+      "scope": "runtime",
+      "license": "MIT"
+    }
+  ],
+  "transitive_or_unknown": [
+    {
+      "name": "bun-types",
+      "files": 1
+    },
+    {
+      "name": "cytoscape",
+      "files": 1
+    },
+    {
+      "name": "expo-modules-macros",
+      "files": 2
+    },
+    {
+      "name": "thread-stream",
+      "files": 1
+    }
+  ]
+}

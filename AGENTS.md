@@ -370,3 +370,18 @@ They describe the enforced syntax, fixture behavior, and reasons for removed rul
   or `@ts-ignore`; disables rules through `biome.json` overrides or removes a GritQL plugin; widens
   a boundary to `any` or `unknown`; or uses an assertion to bypass a checker. Fix the domain issue,
   or explain why the rule is wrong and let the developer decide.
+
+## Archaeology status
+
+Measured on 2026-11-20 at `140d75f31547`. The full W0-W10 report is in
+[.agents/ARQUEOLOGIA/REPORT.md](.agents/ARQUEOLOGIA/REPORT.md).
+
+- Tree: 7,701 TypeScript/JavaScript files and 1,645,650 lines; UTF-8, LF, no BOM.
+- Green: `bun install --frozen-lockfile`, `bun run build`, `typecheck:renderer`, one narrow test.
+- Red: `bun run typecheck:node` fails at `scripts/mistral-stuck-turn-e2e.ts:110`, where the
+  `AgentBrowserHost` mock lacks `toolCanUseTab`. The finding, owner and when are in
+  [.agents/ESTACIONAMENTO.md](.agents/ESTACIONAMENTO.md).
+- Structural graph: `CRG-LOCAL-STRUCTURAL-GRAPH` in
+  [.agents/CODE-REVIEW-GRAPH-INDEX.md](.agents/CODE-REVIEW-GRAPH-INDEX.md).
+- Embedded dependency guidance: [.agents/ARQUEOLOGIA/DEPENDENCIES.md](.agents/ARQUEOLOGIA/DEPENDENCIES.md).
+

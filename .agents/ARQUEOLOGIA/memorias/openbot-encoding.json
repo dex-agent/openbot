@@ -1,0 +1,11 @@
+{
+  "slug": "openbot-encoding",
+  "scope": "project",
+  "title": "OpenBot: encoding UTF-8 LF sem BOM nas tres camadas",
+  "trigger": "Antes de editar arquivo do openbot; suspeita de CRLF, BOM ou mojibake",
+  "body": "Medicao byte-a-byte nas 7.701 fontes: zero BOM, zero CRLF, zero arquivo nao-UTF8, zero NUL; 1.994 arquivos tem bytes >=0x80 e todos decodificam como UTF-8. Camada loja: git ls-files --eol mostra 9.335 arquivos i/lf w/lf e 325 binarios; blobs de amostra batem byte-a-byte com o disco. Camada maquina: core.autocrlf=true vem do gitconfig de sistema, mas .gitattributes fixa '* text=auto eol=lf', entao nao ha contaminacao. Armadilha: 'git config core.autocrlf --show-origin' SETA a chave com o literal --show-origin; ler sempre 'git config --show-origin core.autocrlf' e, se corromper, 'git config --unset core.autocrlf'.",
+  "tags": [
+    "#openbot/encoding",
+    "#openbot/tropeco"
+  ]
+}

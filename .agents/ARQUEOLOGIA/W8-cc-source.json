@@ -1,0 +1,342 @@
+{
+  "funcoes_fonte": 37815,
+  "cc_total_fonte": 169905,
+  "cc_max_fonte": 774,
+  "cc_media_fonte": 4.49,
+  "acima_10": 2783,
+  "acima_50": 232,
+  "top": [
+    {
+      "arquivo": "packages/ui/src/features/workflows/WorkflowCanvas.tsx",
+      "funcao": "WorkflowCanvas",
+      "lingua": "ts",
+      "cc": 774,
+      "linhas": [
+        500,
+        3736
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/renderer/src/features/web-client/web-client-context.tsx",
+      "funcao": "createWebWorkspace",
+      "lingua": "ts",
+      "cc": 650,
+      "linhas": [
+        218,
+        2457
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/renderer/src/features/web-client/WebWorkspace.tsx",
+      "funcao": "WebWorkspaceFrame",
+      "lingua": "ts",
+      "cc": 641,
+      "linhas": [
+        456,
+        3909
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/renderer/src/features/conversation/conversation-scope.ts",
+      "funcao": "createConversationViewScope",
+      "lingua": "ts",
+      "cc": 495,
+      "linhas": [
+        111,
+        2586
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "packages/team-client/src/remote-peer.ts",
+      "funcao": "createRemoteTeamPeer",
+      "lingua": "ts",
+      "cc": 488,
+      "linhas": [
+        460,
+        2322
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "apps/mobile/src/features/workspace/context/mobile-workspace-context.tsx",
+      "funcao": "MobileWorkspaceProvider",
+      "lingua": "ts",
+      "cc": 439,
+      "linhas": [
+        375,
+        2659
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/main/application-services.ts",
+      "funcao": "createApplicationServices",
+      "lingua": "ts",
+      "cc": 423,
+      "linhas": [
+        964,
+        4266
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/renderer/src/preview/mock-openbot.ts",
+      "funcao": "createMockOpenBot",
+      "lingua": "ts",
+      "cc": 395,
+      "linhas": [
+        459,
+        3876
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/renderer/src/features/settings/marketplace-controller.ts",
+      "funcao": "createMarketplaceController",
+      "lingua": "ts",
+      "cc": 352,
+      "linhas": [
+        230,
+        1814
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "packages/ui/src/features/conversation/ComposerEditor.tsx",
+      "funcao": "ComposerEditor",
+      "lingua": "ts",
+      "cc": 301,
+      "linhas": [
+        205,
+        1306
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "packages/ui/src/features/workflows/workflow-board.tsx",
+      "funcao": "createBoard",
+      "lingua": "ts",
+      "cc": 288,
+      "linhas": [
+        390,
+        1497
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "apps/mobile/src/features/chat/components/chat-view.tsx",
+      "funcao": "ChatView",
+      "lingua": "ts",
+      "cc": 286,
+      "linhas": [
+        214,
+        1454
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/renderer/src/features/conversation/ConversationTimeline.tsx",
+      "funcao": "ConversationTimeline",
+      "lingua": "ts",
+      "cc": 285,
+      "linhas": [
+        133,
+        1753
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/renderer/src/features/web-client/web-runtime.ts",
+      "funcao": "createWebWorkspaceRuntime",
+      "lingua": "ts",
+      "cc": 282,
+      "linhas": [
+        555,
+        1882
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "packages/ui/src/features/files/LibraryPage.tsx",
+      "funcao": "LibraryPage",
+      "lingua": "ts",
+      "cc": 279,
+      "linhas": [
+        123,
+        1341
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "packages/ui/src/components/ProviderModelPicker.tsx",
+      "funcao": "ProviderModelPicker",
+      "lingua": "ts",
+      "cc": 266,
+      "linhas": [
+        163,
+        1282
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/renderer/src/features/conversation/stores/composer-actions.ts",
+      "funcao": "createComposerActions",
+      "lingua": "ts",
+      "cc": 220,
+      "linhas": [
+        200,
+        1015
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/renderer/src/features/conversation/stores/browser-store.ts",
+      "funcao": "createBrowserStore",
+      "lingua": "ts",
+      "cc": 206,
+      "linhas": [
+        85,
+        839
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/backend/agent-service.ts",
+      "funcao": "constructor",
+      "lingua": "ts",
+      "cc": 205,
+      "linhas": [
+        586,
+        2034
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/renderer/src/features/agent-tasks/agent-tasks-state.ts",
+      "funcao": "createAgentTasks",
+      "lingua": "ts",
+      "cc": 204,
+      "linhas": [
+        73,
+        836
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/renderer/src/features/conversation/stores/voice-conversation-store.ts",
+      "funcao": "createVoiceConversation",
+      "lingua": "ts",
+      "cc": 196,
+      "linhas": [
+        103,
+        863
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/main/renderer-forwarders.ts",
+      "funcao": "createRendererForwarders",
+      "lingua": "ts",
+      "cc": 188,
+      "linhas": [
+        104,
+        713
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/backend/agent/thread-items.ts",
+      "funcao": "isCodexBareBadRequest",
+      "lingua": "ts",
+      "cc": 186,
+      "linhas": [
+        107,
+        592
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/renderer/src/features/conversation/AgentRoutinesSettings.tsx",
+      "funcao": "AgentRoutinesSettings",
+      "lingua": "ts",
+      "cc": 184,
+      "linhas": [
+        149,
+        1215
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/renderer/src/features/conversation/ConversationComposer.tsx",
+      "funcao": "ConversationComposer",
+      "lingua": "ts",
+      "cc": 183,
+      "linhas": [
+        69,
+        894
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "src/main/analytics.ts",
+      "funcao": "sanitizeHostProperty",
+      "lingua": "ts",
+      "cc": 179,
+      "linhas": [
+        1273,
+        1439
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "packages/ui/src/features/conversation/AgentSettingsPanel.tsx",
+      "funcao": "AgentSettingsPanel",
+      "lingua": "ts",
+      "cc": 174,
+      "linhas": [
+        264,
+        1690
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "packages/ui/src/features/agent-dock/AgentDock.tsx",
+      "funcao": "AgentDock",
+      "lingua": "ts",
+      "cc": 173,
+      "linhas": [
+        285,
+        1525
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "apps/mobile/src/features/agents/screens/connected-screen.tsx",
+      "funcao": "ConnectedScreen",
+      "lingua": "ts",
+      "cc": 164,
+      "linhas": [
+        352,
+        1207
+      ],
+      "escopo": "projeto"
+    },
+    {
+      "arquivo": "apps/mobile/src/features/servers/screens/agent-task-screen.tsx",
+      "funcao": "AgentTaskChat",
+      "lingua": "ts",
+      "cc": 161,
+      "linhas": [
+        157,
+        862
+      ],
+      "escopo": "projeto"
+    }
+  ],
+  "excluded_files": 57391,
+  "covered_files_note": "out/ and vendor/ excluded from the source podium"
+}

@@ -1,0 +1,18 @@
+---
+implementation_version: v2
+layer: L2
+slug: openbot-metricas-podio
+tags:
+  - "#openbot/metricas"
+  - "#openbot/hotspot"
+---
+
+# OpenBot: podio de God Class, Long Method e CC
+
+God Class (CRG, producao): AgentService 233 metodos e 6.400 linhas em src/backend/agent-service.ts; MailboxStore 103/3.378; OpenBotDatabase 88/586; ProviderRuntime 70/3.957; BrowserHost 63/4.000. Long Method: WebWorkspaceFrame 3.454 linhas; createMockOpenBot 3.418; createApplicationServices 3.303; WorkflowCanvas 3.237; createConversationViewScope 2.476. CC (medidor da casa, fontes de producao): 37.815 funcoes, media 4,49, maximo 774 em packages/ui/src/features/workflows/WorkflowCanvas.tsx; 2.783 funcoes acima de 10 e 232 acima de 50. O medidor inclui out/ por default e infla o ranking; filtrar fontes antes de publicar podio.
+
+#openbot/metricas #openbot/hotspot
+
+[Voltar às lembranças](../lembranca.md) [[lembranca|Lembranças]]
+
+^openbot-metricas-podio-content

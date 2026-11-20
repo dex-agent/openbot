@@ -1,0 +1,11 @@
+{
+  "slug": "openbot-rotas-e-workspaces",
+  "scope": "project",
+  "title": "OpenBot: workspaces, denominador e direcao de dependencia",
+  "trigger": "Ao navegar o repo, decidir escopo de mudanca ou medir tamanho do projeto",
+  "body": "OpenBot e um monorepo unico, sem rota legada separada. Workspaces: apps/* (auth-api, mobile, mobile-updates, site-router, status, apps de mensageria), packages/* (contracts, ui, i18n, logging, telemetry, team-client, user-errors, whatsapp, brand) e remote/api. O desktop mora na raiz (src/main, src/preload, src/renderer, src/backend). Denominador da arqueologia: 7.701 fontes .ts/.tsx/.js/.mjs/.cjs fora de node_modules, dist, build, out e coverage; 1.645.650 linhas; 74,5 MB. Dependencias apontam para packages/contracts; renderer nao importa main/backend; contratos nao importam Electron/SolidJS/Cloudflare.",
+  "tags": [
+    "#openbot/rotas",
+    "#openbot/arquitetura"
+  ]
+}

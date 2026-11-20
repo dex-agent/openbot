@@ -1,0 +1,11 @@
+node_modules\thread-stream\CLAUDE.md
+node_modules\react-native-webrtc\CLAUDE.md
+node_modules\react-native-keyboard-controller\AGENTS.md
+node_modules\bun-types\CLAUDE.md
+node_modules\cytoscape\AGENTS.md
+node_modules\elysia\CLAUDE.md
+node_modules\elysia\AGENTS.md
+node_modules\effect\CLAUDE.md
+node_modules\effect\AGENTS.md
+node_modules\expo-modules-macros\CLAUDE.md
+node_modules\expo-modules-macros\AGENTS.md

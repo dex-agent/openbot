@@ -71,3 +71,27 @@ if printf '%s\n' "$staged_paths" | grep -Eq "$schema_pattern"; then
   echo "Running the database schema parity test..."
   bun run test:desktop -- src/backend/openbot-database-schema-parity.test.ts
 fi
+# >>> code-review-graph pre-commit hook >>>
+# Installed by code-review-graph. Remove this file to disable pre-commit graph checks.
+if { command -v uvx >/dev/null 2>&1 || command -v code-review-graph >/dev/null 2>&1; }; then
+    crg_hook_cli() {
+        if command -v code-review-graph >/dev/null 2>&1; then code-review-graph "$@"
+        elif command -v uvx >/dev/null 2>&1; then uvx code-review-graph "$@"
+        else return 127
+        fi
+    }
+    crg_hook_git_dir=$(git rev-parse --absolute-git-dir 2>/dev/null) || crg_hook_git_dir=""
+    crg_hook_root=$(git rev-parse --show-toplevel 2>/dev/null) || crg_hook_root=""
+    if [ -z "$crg_hook_git_dir" ] || [ -z "$crg_hook_root" ]; then
+        echo "code-review-graph: skipping automatic checks; cannot determine the Git worktree." >&2
+    elif [ -f "$crg_hook_git_dir/commondir" ] && [ "$CRG_HOOK_WORKTREES" != "1" ]; then
+        # Only a linked worktree's git dir carries a commondir file (Git 2.5+),
+        # so this needs no rev-parse options newer than --absolute-git-dir.
+        echo "code-review-graph: skipping automatic checks in a linked worktree;" \
+            "set CRG_HOOK_WORKTREES=1 to keep a graph for this worktree too." >&2
+    else
+        crg_hook_cli update --quiet --repo "$crg_hook_root" || true
+        crg_hook_cli detect-changes --brief --repo "$crg_hook_root" || true
+    fi
+fi
+# <<< code-review-graph pre-commit hook <<<

@@ -1,0 +1,595 @@
+{
+  "source_files": 7701,
+  "internal_edges": 35702,
+  "internal_nodes_with_outgoing": 6995,
+  "dynamic_import_files": 192,
+  "unresolved_relative": 986,
+  "unresolved_sample": [
+    {
+      "source": ".storybook/preview.tsx",
+      "spec": "../src/renderer/src/styles.css"
+    },
+    {
+      "source": ".storybook/preview.tsx",
+      "spec": "./preview.css"
+    },
+    {
+      "source": "apps/auth-api/content-images.ts",
+      "spec": "../../package.json"
+    },
+    {
+      "source": "apps/auth-api/src/components/agents/AgentTemplatePage.stories.tsx",
+      "spec": "../../../public/icon-512x512.png"
+    },
+    {
+      "source": "apps/auth-api/src/components/agents/AgentTemplatePage.stories.tsx",
+      "spec": "../../styles.css"
+    },
+    {
+      "source": "apps/auth-api/src/components/content/ArticleMedia.stories.tsx",
+      "spec": "../../content/guides/media/openbot-101/pick-a-model.webp"
+    },
+    {
+      "source": "apps/auth-api/src/components/content/ArticleMedia.stories.tsx",
+      "spec": "../../content/guides/media/openbot-101/a-channel.webp"
+    },
+    {
+      "source": "apps/auth-api/src/components/content/ArticleMedia.stories.tsx",
+      "spec": "../../content/guides/media/openbot-101/a-thread.webp"
+    },
+    {
+      "source": "apps/auth-api/src/components/content/ArticleMedia.stories.tsx",
+      "spec": "../../styles.css"
+    },
+    {
+      "source": "apps/auth-api/src/components/content/ArticleMedia.stories.tsx",
+      "spec": "./ArticleMedia.stories.css"
+    },
+    {
+      "source": "apps/auth-api/src/components/marketplace/Marketplace.stories.tsx",
+      "spec": "../../styles.css"
+    },
+    {
+      "source": "apps/auth-api/src/components/marketplace/MarketplaceShareCardPrototype.stories.tsx",
+      "spec": "./MarketplaceShareCardPrototype.css"
+    },
+    {
+      "source": "apps/auth-api/src/components/marketplace/MarketplaceShareCardPrototype.stories.tsx",
+      "spec": "../../styles.css"
+    },
+    {
+      "source": "apps/auth-api/src/components/pricing/PricingPage.stories.tsx",
+      "spec": "../../styles.css"
+    },
+    {
+      "source": "apps/auth-api/src/components/pricing/PricingPage.tsx",
+      "spec": "./PricingPage.css"
+    },
+    {
+      "source": "apps/auth-api/src/components/transactional/MessagingConnectPage.stories.tsx",
+      "spec": "../../styles.css"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/import-grok-bot-agents.tsx",
+      "spec": "./media/import-grok-bot-agents/import-source.png"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/import-grok-bot-agents.tsx",
+      "spec": "./media/import-grok-bot-agents/add-migrator.png"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/import-grok-bot-agents.tsx",
+      "spec": "./media/import-grok-bot-agents/export-instructions.png"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/import-hermes-agents.tsx",
+      "spec": "./media/import-hermes-agents/import-source.png"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/import-hermes-agents.tsx",
+      "spec": "./media/import-hermes-agents/read-folder.png"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/import-hermes-agents.tsx",
+      "spec": "./media/import-hermes-agents/review-profiles.png"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/import-hermes-agents.tsx",
+      "spec": "./media/import-hermes-agents/install-command.png"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/import-hermes-agents.tsx",
+      "spec": "./media/import-hermes-agents/manual-setup.png"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/import-hermes-agents.tsx",
+      "spec": "./media/import-hermes-agents/import-finished.png"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/openbot-101.tsx",
+      "spec": "./media/openbot-101/a-channel.webp"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/openbot-101.tsx",
+      "spec": "./media/openbot-101/pick-a-model.webp"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/openbot-101.tsx",
+      "spec": "./media/openbot-101/a-thread.webp"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/openbot-101.tsx",
+      "spec": "./media/openbot-101/a-routine.webp"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/openbot-hosted-servers.tsx",
+      "spec": "./media/openbot-hosted-servers/pricing.png"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/openbot-marketplace.tsx",
+      "spec": "./media/openbot-marketplace/marketplace.png"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/openbot-marketplace.tsx",
+      "spec": "./media/openbot-marketplace/marketplace-menu.png"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/openbot-marketplace.tsx",
+      "spec": "./media/openbot-marketplace/github-plugin.png"
+    },
+    {
+      "source": "apps/auth-api/src/content/guides/openbot-marketplace.tsx",
+      "spec": "./media/openbot-marketplace/agent-detail.png"
+    },
+    {
+      "source": "apps/auth-api/src/lib/changelog-releases.ts",
+      "spec": "../../../mobile/CHANGELOG.md?raw"
+    },
+    {
+      "source": "apps/auth-api/src/lib/changelog-releases.ts",
+      "spec": "../../../../CHANGELOG.md?raw"
+    },
+    {
+      "source": "apps/auth-api/src/lib/software-application.ts",
+      "spec": "../../../../package.json"
+    },
+    {
+      "source": "apps/auth-api/src/lib/software-application.ts",
+      "spec": "../content/guides/media/openbot-101/a-channel.webp"
+    },
+    {
+      "source": "apps/auth-api/src/routes/__root.tsx",
+      "spec": "@openbot/brand/logo.css"
+    },
+    {
+      "source": "apps/auth-api/src/routes/__root.tsx",
+      "spec": "../styles.css"
+    }
+  ],
+  "cycles": 34,
+  "cycle_nodes": 427,
+  "cycle_sample": [
+    [
+      "src/main/agent-import-service.ts",
+      "src/main/agent-marketplace-service.ts",
+      "src/main/agent-template-service.ts",
+      "src/main/browser-view-gateway.ts",
+      "src/main/central-auth-manager.ts",
+      "src/main/hermes-import-reader.ts"
+    ],
+    [
+      "src/backend/acp-client.ts",
+      "src/backend/agent-service.ts",
+      "src/backend/agent-tasks/agent-tasks.ts",
+      "src/backend/agent/agent-interrupt-tool.ts",
+      "src/backend/agent/agent-memories.ts",
+      "src/backend/agent/agent-removal.ts"
+    ],
+    [
+      "src/renderer/src/app-bootstrap.tsx",
+      "src/renderer/src/app-providers.tsx",
+      "src/renderer/src/features/agent-tasks/agent-tasks-context.tsx",
+      "src/renderer/src/features/agent-threads/agent-threads-context.tsx",
+      "src/renderer/src/features/agents/agent-actions.tsx",
+      "src/renderer/src/features/agents/agent-event-bridge.tsx"
+    ],
+    [
+      "src/renderer/src/app-port.ts",
+      "src/renderer/src/features/crm/crm-enabled.ts",
+      "src/renderer/src/features/crm/crm-port.ts",
+      "src/renderer/src/features/servers/ServerAgentsSection.tsx",
+      "src/renderer/src/features/servers/ServerAuditSection.tsx",
+      "src/renderer/src/features/servers/ServerCompanySignInSection.tsx"
+    ],
+    [
+      "packages/contracts/src/agent-providers.ts",
+      "packages/contracts/src/ipc-agent-dock.ts",
+      "packages/contracts/src/ipc-agent-identity.ts",
+      "packages/contracts/src/ipc-agent-status.ts",
+      "packages/contracts/src/ipc-agent-tasks.ts",
+      "packages/contracts/src/ipc-agents.ts"
+    ],
+    [
+      "apps/auth-api/src/server/account-analytics.ts",
+      "apps/auth-api/src/server/account-attribution.ts",
+      "apps/auth-api/src/server/billing-oss.ts",
+      "apps/auth-api/src/server/billing-purchase.ts",
+      "apps/auth-api/src/server/billing-referral.ts",
+      "apps/auth-api/src/server/billing-sales.ts"
+    ],
+    [
+      "packages/whatsapp/vendor/baileys/src/Defaults/index.ts",
+      "packages/whatsapp/vendor/baileys/src/Signal/lid-mapping.ts",
+      "packages/whatsapp/vendor/baileys/src/Types/Auth.ts",
+      "packages/whatsapp/vendor/baileys/src/Types/Chat.ts",
+      "packages/whatsapp/vendor/baileys/src/Types/Events.ts",
+      "packages/whatsapp/vendor/baileys/src/Types/GroupMetadata.ts"
+    ],
+    [
+      "packages/whatsapp/vendor/baileys/src/Types/USync.ts",
+      "packages/whatsapp/vendor/baileys/src/WAUSync/Protocols/USyncContactProtocol.ts",
+      "packages/whatsapp/vendor/baileys/src/WAUSync/Protocols/USyncDeviceProtocol.ts",
+      "packages/whatsapp/vendor/baileys/src/WAUSync/Protocols/USyncDisappearingModeProtocol.ts",
+      "packages/whatsapp/vendor/baileys/src/WAUSync/Protocols/USyncStatusProtocol.ts",
+      "packages/whatsapp/vendor/baileys/src/WAUSync/Protocols/USyncUsernameProtocol.ts"
+    ],
+    [
+      "src/backend/database/agent-roster.ts",
+      "src/backend/database/conversation-writer.ts",
+      "src/backend/database/thread-event-compaction.ts",
+      "src/backend/database/thread-message-fold.ts",
+      "src/backend/database/thread-replay.ts",
+      "src/backend/openbot-database.ts"
+    ],
+    [
+      "apps/mobile/src/features/auth/context/mobile-session-context.tsx",
+      "apps/mobile/src/features/workspace/components/remote-team-transport.tsx",
+      "apps/mobile/src/features/workspace/model/workspace-cache.ts",
+      "apps/mobile/src/features/workspace/model/workspace-records.ts",
+      "apps/mobile/src/features/workspace/model/workspace-types.ts"
+    ]
+  ],
+  "top_fan_in": [
+    [
+      "packages/contracts/src/ipc.ts",
+      2036
+    ],
+    [
+      "packages/i18n/src/message.ts",
+      1600
+    ],
+    [
+      "packages/contracts/src/runtime-values.ts",
+      835
+    ],
+    [
+      "packages/ui/src/text.tsx",
+      689
+    ],
+    [
+      "src/backend/effect-boundary.ts",
+      555
+    ],
+    [
+      "packages/ui/src/index.ts",
+      542
+    ],
+    [
+      "apps/mobile/src/shared/lib/text.ts",
+      415
+    ],
+    [
+      "packages/logging/src/index.ts",
+      383
+    ],
+    [
+      "packages/contracts/src/input-limits.ts",
+      305
+    ],
+    [
+      "packages/i18n/src/index.ts",
+      298
+    ],
+    [
+      "apps/mobile/src/shared/lib/haptics.ts",
+      249
+    ],
+    [
+      "apps/mobile/src/features/workspace/context/mobile-workspace-context.tsx",
+      201
+    ],
+    [
+      "src/backend/protocol.ts",
+      197
+    ],
+    [
+      "src/backend/openbot-database.ts",
+      196
+    ],
+    [
+      "apps/mobile/src/features/settings/components/settings-content.tsx",
+      177
+    ],
+    [
+      "packages/contracts/src/team-protocol/admin-wire.ts",
+      174
+    ],
+    [
+      "packages/ui/src/data.ts",
+      161
+    ],
+    [
+      "apps/auth-api/src/server/effect-runtime.ts",
+      156
+    ],
+    [
+      "apps/auth-api/src/server/request-auth.ts",
+      156
+    ],
+    [
+      "src/backend/agent-store.ts",
+      146
+    ],
+    [
+      "packages/contracts/src/agent-providers.ts",
+      143
+    ],
+    [
+      "src/backend/mailbox-store.ts",
+      141
+    ],
+    [
+      "src/main/team-api/dependencies.ts",
+      134
+    ],
+    [
+      "src/backend/agent-client.ts",
+      133
+    ],
+    [
+      "src/backend/agent-service.ts",
+      132
+    ]
+  ],
+  "top_fan_out": [
+    [
+      "src/main/application-services.ts",
+      290
+    ],
+    [
+      "apps/auth-api/src/routeTree.gen.ts",
+      271
+    ],
+    [
+      "src/main/team-api-server.ts",
+      250
+    ],
+    [
+      "src/renderer/src/features/web-client/WebWorkspace.tsx",
+      233
+    ],
+    [
+      "packages/contracts/src/team-protocol/current.ts",
+      232
+    ],
+    [
+      "scripts/team-api-routes-e2e.ts",
+      197
+    ],
+    [
+      "packages/contracts/src/team-protocol/optional-routes.ts",
+      171
+    ],
+    [
+      "apps/mobile/src/features/workspace/context/mobile-workspace-context.tsx",
+      146
+    ],
+    [
+      "src/backend/agent-service.ts",
+      142
+    ],
+    [
+      "src/main/index.ts",
+      126
+    ],
+    [
+      "packages/contracts/src/ipc.ts",
+      116
+    ],
+    [
+      "apps/mobile/src/features/workspace/context/host-request-actions.ts",
+      115
+    ],
+    [
+      "packages/contracts/src/ipc-endpoints.ts",
+      100
+    ],
+    [
+      "src/main/team-api/client-use.ts",
+      97
+    ],
+    [
+      "packages/team-client/src/team-admin-requests.ts",
+      96
+    ],
+    [
+      "src/backend/agent/openbot-tool-router.ts",
+      79
+    ],
+    [
+      "src/main/team-api/dependencies.ts",
+      76
+    ],
+    [
+      "src/renderer/src/WorkspaceOverlays.tsx",
+      72
+    ],
+    [
+      "src/renderer/src/features/conversation/ConversationTimeline.tsx",
+      72
+    ],
+    [
+      "apps/mobile/src/features/chat/components/chat-view.tsx",
+      71
+    ],
+    [
+      "src/main/ipc/agent-handlers.ts",
+      68
+    ],
+    [
+      "apps/mobile/src/features/chat/components/chat-message-list.tsx",
+      65
+    ],
+    [
+      "src/renderer/src/features/web-client/web-runtime.ts",
+      65
+    ],
+    [
+      "src/main/remote-server-manager.ts",
+      64
+    ],
+    [
+      "src/backend/migrations/registry.ts",
+      60
+    ]
+  ],
+  "top_external": [
+    [
+      "effect",
+      1120
+    ],
+    [
+      "node:fs",
+      1116
+    ],
+    [
+      "solid-js",
+      1032
+    ],
+    [
+      "node:path",
+      835
+    ],
+    [
+      "lucide-react-native",
+      782
+    ],
+    [
+      "react",
+      465
+    ],
+    [
+      "heroui-native",
+      449
+    ],
+    [
+      "node:os",
+      435
+    ],
+    [
+      "react-native",
+      384
+    ],
+    [
+      "node:assert",
+      366
+    ],
+    [
+      "@tanstack/solid-router",
+      326
+    ],
+    [
+      "node:crypto",
+      307
+    ],
+    [
+      "@solidjs/web",
+      295
+    ],
+    [
+      "expo-router",
+      284
+    ],
+    [
+      "node:child_process",
+      250
+    ],
+    [
+      "lucide-solid",
+      212
+    ],
+    [
+      "uniwind",
+      195
+    ],
+    [
+      "storybook-solidjs-vite",
+      190
+    ],
+    [
+      "node:sqlite",
+      169
+    ],
+    [
+      "zod",
+      160
+    ],
+    [
+      "vitest",
+      138
+    ],
+    [
+      "react-native-reanimated",
+      136
+    ],
+    [
+      "storybook",
+      126
+    ],
+    [
+      "electron",
+      116
+    ],
+    [
+      "@tanstack/react-query",
+      112
+    ],
+    [
+      "node:http",
+      99
+    ],
+    [
+      "@modelcontextprotocol/sdk",
+      73
+    ],
+    [
+      "node:url",
+      69
+    ],
+    [
+      "playwright-core",
+      59
+    ],
+    [
+      "node:util",
+      57
+    ]
+  ],
+  "workspace_aliases": {
+    "@openbot/brand": "packages/brand",
+    "@openbot/contracts": "packages/contracts",
+    "@openbot/i18n": "packages/i18n",
+    "@openbot/logging": "packages/logging",
+    "@openbot/team-client": "packages/team-client",
+    "@openbot/telemetry": "packages/telemetry",
+    "@openbot/ui": "packages/ui",
+    "@openbot/user-errors": "packages/user-errors",
+    "@openbot/whatsapp": "packages/whatsapp",
+    "@openbot/auth-api": "apps/auth-api",
+    "@openbot/mobile": "apps/mobile",
+    "@openbot/mobile-updates": "apps/mobile-updates",
+    "@openbot/site-router": "apps/site-router",
+    "@openbot/status": "apps/status",
+    "@openbot/remote-api": "remote/api"
+  }
+}

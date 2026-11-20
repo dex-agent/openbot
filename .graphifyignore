@@ -1,0 +1,11 @@
+node_modules/
+out/
+dist/
+build/
+coverage/
+.openbot-build/
+.agents/CODE-REVIEW-GRAPH/
+.code-review-graph/
+graphify-out/
+vendor/
+packages/whatsapp/vendor/
