@@ -24,13 +24,16 @@ dialeto `arqueologia-nodejs-warmup`).
 - W6: `bun install --frozen-lockfile` 0, `bun run build` 0, teste estreito 0,
   `typecheck:renderer` 0; `typecheck:node` 1 (achado P1 em
   `.agents/ESTACIONAMENTO.md`)
-- W7: CRG completo (89.440 nos, 714.460 arestas); Graphify em rota de
-  diagnostico (trava apos a extracao)
+- W7: CRG completo (89.764 nos, 715.301 arestas); Graphify reconstruido em
+  26 partes e unido (80.042 nos, 234.054 links); `grafo_gate.py` exit 1 por
+  falso-positivo de dominio na checagem de lixo (5/6 checagens verdes);
+  plano B declarado no `REPORT.md`
 - W8: podio medido (God Class `AgentService` 233 metodos; CC max 774)
 - W9: 10 memorias V2 `scope=project` validadas em lote (10/10)
-- W10: em fechamento
+- W10: `RECEIPT.json` gerado, plaquinhas completas, `LIXEIRA/MANIFEST.md`
 
 ## Proximo passo
 
-Fechar W7 (gate ou plano B declarado), gerar `RECEIPT.json`, atualizar
-`REPORT.md` e commitar o bloco.
+Bloco fechado. Retomar por `REPORT.md` + `RECEIPT.json`. O achado P1 de
+`typecheck:node` espera o mantenedor (`.agents/ESTACIONAMENTO.md`).
+

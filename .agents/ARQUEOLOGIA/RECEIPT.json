@@ -1,0 +1,356 @@
+{
+  "schema": "dex.arqueologia.receipt.v1",
+  "project": "openbot",
+  "root": ".",
+  "generated_at_utc": "2026-11-20T15:44:47Z",
+  "branch": "main",
+  "head_measured": "140d75f3154714e967b7798d1ae43c98095400d3",
+  "head_current": "63f229bd3cb2cf5e95f0a314935b3c08e8d0e92e",
+  "tier": "completo",
+  "denominator": {
+    "files": 7701,
+    "lines": 1645650,
+    "bytes": 74527347,
+    "by_ext": {
+      ".ts": {
+        "files": 5837,
+        "lines": 1197276,
+        "bytes": 56924581
+      },
+      ".js": {
+        "files": 18,
+        "lines": 99061,
+        "bytes": 4495973
+      },
+      ".tsx": {
+        "files": 1838,
+        "lines": 348306,
+        "bytes": 13066959
+      },
+      ".mjs": {
+        "files": 6,
+        "lines": 970,
+        "bytes": 38388
+      },
+      ".cjs": {
+        "files": 2,
+        "lines": 37,
+        "bytes": 1446
+      }
+    }
+  },
+  "w2_encoding": {
+    "disk": {
+      "bom_files": 0,
+      "crlf_files": 0,
+      "non_utf8_files": 0,
+      "nul_files": 0,
+      "files_with_high_bytes": 1994
+    },
+    "store": {
+      "i/lf w/lf": 9335,
+      "i/ w/none": 1,
+      "i/-text w/-text": 325,
+      "i/none w/none": 1
+    },
+    "machine": {
+      "core_autocrlf_system": "true",
+      "gitattributes": "* text=auto eol=lf",
+      "contamination": "none measured"
+    }
+  },
+  "w3_graph": {
+    "internal_edges": 35702,
+    "unresolved_relative": 986,
+    "cycles": 34,
+    "cycle_nodes": 427,
+    "top_fan_in": [
+      [
+        "packages/contracts/src/ipc.ts",
+        2036
+      ],
+      [
+        "packages/i18n/src/message.ts",
+        1600
+      ],
+      [
+        "packages/contracts/src/runtime-values.ts",
+        835
+      ],
+      [
+        "packages/ui/src/text.tsx",
+        689
+      ],
+      [
+        "src/backend/effect-boundary.ts",
+        555
+      ]
+    ]
+  },
+  "w4_third_party": {
+    "direct_total": 168,
+    "runtime": 132,
+    "dev": 36,
+    "license_counts": {
+      "MIT": 129,
+      "Apache-2.0": 14,
+      "SEE LICENSE IN README.md": 1,
+      "MIT OR Apache-2.0": 3,
+      "BSD-3-Clause": 4,
+      "OFL-1.1": 1,
+      "(unknown)": 7,
+      "PolyForm-Noncommercial-1.0.0": 2,
+      "CC0-1.0": 1,
+      "MPL-2.0": 1,
+      "ISC": 4,
+      "BlueOak-1.0.0": 1
+    },
+    "artifact_named_packages": 32,
+    "artifact_files_scanned": 343,
+    "artifact_bytes_scanned": 70420592
+  },
+  "w4b_guidance": {
+    "packages_with_guidance": 8,
+    "direct_dependencies": [
+      {
+        "name": "effect",
+        "files": 2,
+        "scope": "runtime",
+        "license": "MIT"
+      },
+      {
+        "name": "elysia",
+        "files": 2,
+        "scope": "runtime",
+        "license": "MIT"
+      },
+      {
+        "name": "react-native-keyboard-controller",
+        "files": 1,
+        "scope": "runtime",
+        "license": "MIT"
+      },
+      {
+        "name": "react-native-webrtc",
+        "files": 1,
+        "scope": "runtime",
+        "license": "MIT"
+      }
+    ]
+  },
+  "w5_secrets": {
+    "hits": 167,
+    "tracked_hits": 167,
+    "env_files": [
+      "apps/auth-api/.env.dev",
+      "apps/auth-api/.env.example",
+      "apps/auth-api/.env.production",
+      "remote/.env.example",
+      "remote/.env.production"
+    ],
+    "env_tracked": [
+      "apps/auth-api/.env.dev",
+      "apps/auth-api/.env.example",
+      "apps/auth-api/.env.production",
+      "remote/.env.example",
+      "remote/.env.production"
+    ]
+  },
+  "w6_proof": {
+    "install_exit": 0,
+    "build_exit": 0,
+    "test_exit": 0,
+    "typecheck_node_exit": 1,
+    "typecheck_renderer_exit": 0,
+    "gate": "red",
+    "red_items": [
+      "typecheck_node"
+    ],
+    "finding": "scripts/mistral-stuck-turn-e2e.ts:110 missing toolCanUseTab in AgentBrowserHost mock"
+  },
+  "w7_graphs": {
+    "crg_version": "2.4.0+dex.1",
+    "crg_files": 8592,
+    "crg_nodes": 89764,
+    "crg_edges": 715301,
+    "crg_postprocess_exit": 0,
+    "graphify_exit": null,
+    "graphify_merged_nodes": 80042,
+    "graphify_merged_links": 234054,
+    "grafo_gate": {
+      "exit": 1,
+      "command": "grafo_gate.py --data-dir .agents/CODE-REVIEW-GRAPH --graphify .agents/GRAPHIFY/graphify-out/graph.json --min-functions 40000 --max-functions 50000 --max-span 4000 --repo .",
+      "checks": {
+        "junk_paths": false,
+        "span": true,
+        "line_order": true,
+        "function_count": true,
+        "fts_vs_sql": true,
+        "graphify_built_at_commit": true
+      },
+      "junk_false_positive": {
+        "reason": "JUNK_DIRS hardcoded includes .agents and skills; OpenBot has a product skills marketplace and its own .agents surface",
+        "nodes_with_skills_in_path": 1048,
+        "nodes_with_dot_agents_in_path": 603,
+        "product_paths_with_skills": [
+          "apps/auth-api",
+          "src/renderer",
+          "packages/contracts",
+          "apps/mobile",
+          "scripts/*skills*",
+          "marketplace/production-catalog"
+        ]
+      },
+      "plan_b": "W3 import graph (100% of 7701 sources) + CRG substantive checks (span, order, function count, FTS, graphify freshness)",
+      "source": "W7-grafo-gate.txt"
+    },
+    "graphify_single_run": "hung after AST extraction; process killed"
+  },
+  "w8_metrics": {
+    "cc_functions_source": 37815,
+    "cc_max_source": 774,
+    "cc_mean_source": 4.49,
+    "cc_above_10": 2783,
+    "cc_above_50": 232,
+    "god_class_top": [
+      {
+        "file_path": "C:/CodexProjetos/openbot/src/backend/agent-service.ts",
+        "name": "AgentService",
+        "line_start": 506,
+        "line_end": 6905,
+        "span": 6400,
+        "methods": 233
+      },
+      {
+        "file_path": "C:/CodexProjetos/openbot/src/backend/mailbox-store.ts",
+        "name": "MailboxStore",
+        "line_start": 263,
+        "line_end": 3640,
+        "span": 3378,
+        "methods": 103
+      },
+      {
+        "file_path": "C:/CodexProjetos/openbot/src/backend/openbot-database.ts",
+        "name": "OpenBotDatabase",
+        "line_start": 88,
+        "line_end": 673,
+        "span": 586,
+        "methods": 88
+      },
+      {
+        "file_path": "C:/CodexProjetos/openbot/src/backend/agent/provider-runtime.ts",
+        "name": "ProviderRuntime",
+        "line_start": 314,
+        "line_end": 4270,
+        "span": 3957,
+        "methods": 70
+      },
+      {
+        "file_path": "C:/CodexProjetos/openbot/src/backend/browser-host.ts",
+        "name": "BrowserHost",
+        "line_start": 497,
+        "line_end": 4496,
+        "span": 4000,
+        "methods": 63
+      }
+    ],
+    "long_method_top": [
+      {
+        "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/web-client/WebWorkspace.tsx",
+        "name": "WebWorkspaceFrame",
+        "line_start": 456,
+        "line_end": 3909,
+        "span": 3454
+      },
+      {
+        "file_path": "C:/CodexProjetos/openbot/src/renderer/src/preview/mock-openbot.ts",
+        "name": "createMockOpenBot",
+        "line_start": 459,
+        "line_end": 3876,
+        "span": 3418
+      },
+      {
+        "file_path": "C:/CodexProjetos/openbot/src/main/application-services.ts",
+        "name": "createApplicationServices",
+        "line_start": 964,
+        "line_end": 4266,
+        "span": 3303
+      },
+      {
+        "file_path": "C:/CodexProjetos/openbot/packages/ui/src/features/workflows/WorkflowCanvas.tsx",
+        "name": "WorkflowCanvas",
+        "line_start": 500,
+        "line_end": 3736,
+        "span": 3237
+      },
+      {
+        "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/conversation/conversation-scope.ts",
+        "name": "createConversationViewScope",
+        "line_start": 111,
+        "line_end": 2586,
+        "span": 2476
+      }
+    ],
+    "cc_top": [
+      {
+        "arquivo": "packages/ui/src/features/workflows/WorkflowCanvas.tsx",
+        "funcao": "WorkflowCanvas",
+        "lingua": "ts",
+        "cc": 774,
+        "linhas": [
+          500,
+          3736
+        ],
+        "escopo": "projeto"
+      },
+      {
+        "arquivo": "src/renderer/src/features/web-client/web-client-context.tsx",
+        "funcao": "createWebWorkspace",
+        "lingua": "ts",
+        "cc": 650,
+        "linhas": [
+          218,
+          2457
+        ],
+        "escopo": "projeto"
+      },
+      {
+        "arquivo": "src/renderer/src/features/web-client/WebWorkspace.tsx",
+        "funcao": "WebWorkspaceFrame",
+        "lingua": "ts",
+        "cc": 641,
+        "linhas": [
+          456,
+          3909
+        ],
+        "escopo": "projeto"
+      },
+      {
+        "arquivo": "src/renderer/src/features/conversation/conversation-scope.ts",
+        "funcao": "createConversationViewScope",
+        "lingua": "ts",
+        "cc": 495,
+        "linhas": [
+          111,
+          2586
+        ],
+        "escopo": "projeto"
+      },
+      {
+        "arquivo": "packages/team-client/src/remote-peer.ts",
+        "funcao": "createRemoteTeamPeer",
+        "lingua": "ts",
+        "cc": 488,
+        "linhas": [
+          460,
+          2322
+        ],
+        "escopo": "projeto"
+      }
+    ]
+  },
+  "w9_w10": {
+    "knowledge_layer": ".agents/ARQUEOLOGIA/REPORT.md + DEPENDENCIES.md + CODE-REVIEW-GRAPH-INDEX.md",
+    "memories": "pending"
+  }
+}

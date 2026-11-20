@@ -11,12 +11,12 @@ Tags: `#code-review-graph`, `#crg`, `#grafo-estrutural`, `#code-review`, `#impac
 - Data dir: `.agents/CODE-REVIEW-GRAPH` (banco `graph.db` ignorado pelo `.gitignore` interno)
 - Versao do CLI: `code-review-graph 2.4.0+dex.1`
 - Schema SQLite: `v15`
-- Arquivos indexados: `8.561`
-- Nos: `89.440`
-- Arestas: `714.460`
+- Arquivos indexados: `8.592`
+- Nos: `89.764`
+- Arestas: `715.301`
 - Linguagens: bash, html, javascript, json, kotlin, nix, python, sql, swift, tsx, typescript, yaml
-- Atualizado em: `2026-11-20T11:30:01`
-- Pos-processamento: `7.168 flows`, `26 comunidades`, `89.440 entradas FTS`
+- Atualizado em: `2026-11-20T12:05:35`
+- Pos-processamento: `7.168 flows`, `26 comunidades`, `89.440 entradas FTS` (FTS reconstruida antes do update incremental do hook)
 - Tamanho do banco: `749 MB`
 
 ## Comando de refresh

@@ -2,23 +2,37 @@
 
 ## Retomada em janela nova
 
-1. Ler `AGENTS.md` global e `AGENTS.md` do projeto.
+1. Ler `AGENTS.md` global e `AGENTS.md` do projeto (secao Archaeology status).
 2. Ler `.agents/ACTIVE.md`, `.agents/HANDOFF.md`, `.agents/napkin.md`,
-   `.agents/GATILHOS-VIVOS.md`, `.agents/ESTACIONAMENTO.md`.
-3. Ler `.agents/ARQUEOLOGIA/RECEIPT.json` (status medido do ultimo bloco).
-4. Nao reexecutar etapa ja medida: conferir receipt e datas.
+   `.agents/GATILHOS-VIVOS.md`, `.agents/ESTACIONAMENTO.md`,
+   `.agents/PENDENTES.md`.
+3. Ler `.agents/ARQUEOLOGIA/REPORT.md` e `RECEIPT.json`.
+4. Nao reexecutar etapa ja medida; conferir os exits no receipt.
 
-## Fatos de ambiente medidos
+## Fatos de ambiente medidos (2026-11-20)
 
-- `bun` nao existia na maquina; instalado `bun@1.4.2` via
-  `npm install -g bun@1.4.2` em 2026-11-20 (alinha com `packageManager`).
-- `node_modules` ausente no inicio; instalar com
-  `bun install --frozen-lockfile`.
-- `core.autocrlf=true` vem do gitconfig de sistema; `.gitattributes` fixa
-  `* text=auto eol=lf` e a loja mede `i/lf`.
-- CLI do grafo: `code-review-graph 2.4.0+dex.1` no PATH.
+- `bun` nao existia; instalado `bun@1.4.2` via `npm install -g bun@1.4.2`
+  (alinha com `packageManager`).
+- `node`: `v24.19.0`; `engines.node`: `>=24.0.0`.
+- `bun install --frozen-lockfile`: exit 0. O `prepare` ativou
+  `core.hooksPath=.githooks`.
+- `bun run build`: exit 0, 24,28 s, `out/` 76 MB.
+- `typecheck:node`: exit 1 (TS2741 em `scripts/mistral-stuck-turn-e2e.ts:110`).
+- `typecheck:renderer`: exit 0. Teste estreito de redaction: 65 passed.
+- `core.autocrlf=true` no gitconfig de sistema; `.gitattributes` fixa
+  `* text=auto eol=lf`; loja 100% `i/lf`.
+- CLI do grafo: `code-review-graph 2.4.0+dex.1`.
+- Graphify 0.9.105 travou apos a extracao AST em duas rotas; ver
+  `PENDENTES.md`.
 
-## Comandos canonicos do dono
+## Comandos canonicos
 
-Ver `AGENTS.md` secao Checks. Nao rodar checagens amplas locais; a prova W6
-usa o recorte mais estreito e registra o que ficou para CI.
+Ver `AGENTS.md` secao Checks. Nao rodar checagem ampla local; usar
+`bun run test:desktop -- <arquivo>`, `bun run test:changed` e um
+`typecheck:*` por vez.
+
+## Grafo estrutural
+
+`.agents/CODE-REVIEW-GRAPH` (749 MB, ignorado pelo Git). Refresh:
+`code-review-graph build --repo . --data-dir .agents/CODE-REVIEW-GRAPH` e
+depois `postprocess`. Indice em `.agents/CODE-REVIEW-GRAPH-INDEX.md`.

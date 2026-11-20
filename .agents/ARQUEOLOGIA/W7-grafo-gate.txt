@@ -1,0 +1,25 @@
+── grafo_gate ──────────────────────────────────────
+  ❌ lixo de paths/slugs antigos
+      ↳ nós com '.agents' em file_path: 603
+      ↳ nós com 'skills' em file_path: 1048
+      ↳ nós com '__backups' em name: 4
+      ↳ nós com '.agents' em name: 100
+      ↳ nós com 'skills' em name: 782
+      ↳ nós com '__backups' em qualified_name: 5
+      ↳ nós com '.agents' em qualified_name: 630
+      ↳ nós com 'skills' em qualified_name: 1660
+      ↳ edges com '__backups' em source_qualified: 62
+      ↳ edges com '.agents' em source_qualified: 1464
+      ↳ edges com 'skills' em source_qualified: 7601
+      ↳ edges com '__backups' em target_qualified: 24
+      ↳ edges com '.agents' em target_qualified: 642
+      ↳ edges com 'skills' em target_qualified: 4938
+      ↳ edges com '.agents' em file_path: 1430
+      ↳ edges com 'skills' em file_path: 7451
+  ✅ span > 4000L
+  ✅ line_start <= line_end
+  ✅ contagem Function [40000,50000]
+  ✅ FTS vs SQL
+  ✅ graphify built_at_commit == HEAD
+───────────────────────────────────────────────────
+GRAFO_GATE: exit 1 — lixo ou bounds inválidos no graph.db. Corrigir antes de refatorar.

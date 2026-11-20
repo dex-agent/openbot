@@ -62,3 +62,5 @@ keys
 graphify-out/
 .code-review-graph/
 .agents/.dex-memoria/
+.agents/GRAPHIFY/
+.agents/GRAPHIFY-PARTS/

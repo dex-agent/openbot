@@ -122,9 +122,9 @@ sem campo `license` 7 (workspaces `@openbot/*`). Nenhuma runtime GPL/AGPL.
 ## W4b — diretrizes de IA embarcadas
 
 Varredura `--hidden --no-ignore` no repo e em `node_modules`: 124 arquivos no
-repo (92 do catalogo de marketplace, 14 skills do projeto, 14 `AGENTS.md` de
-subarvore) e 11 arquivos em 8 pacotes instalados. Quatro sao dependencias
-DIRETAS: `effect`, `elysia`, `react-native-keyboard-controller`,
+repo (92 do catalogo de marketplace, 14 skills do projeto, 12 `AGENTS.md` de
+subarvore, 3 de `managed-skills`, 2 de `agent-import`, 1 outro) e 11 arquivos
+em 8 pacotes instalados. Quatro sao dependencias DIRETAS: `effect`, `elysia`, `react-native-keyboard-controller`,
 `react-native-webrtc`. Ponteiros e simbolos confirmados em
 `DEPENDENCIES.md`. Nenhuma skill copiada para o registry.
 
@@ -160,16 +160,25 @@ codigo permaneceu read-only por contrato. Owner e quando em
 
 ## W7 — grafos canonicos
 
-- CRG `2.4.0+dex.1`, schema v15: **8.561 arquivos, 89.440 nos, 714.460
+- CRG `2.4.0+dex.1`, schema v15: **8.592 arquivos, 89.764 nos, 715.301
   arestas**, 7.168 flows, 26 comunidades, 89.440 entradas FTS; banco de
-  749 MB em `.agents/CODE-REVIEW-GRAPH` (ignorado pelo Git).
+  751 MB em `.agents/CODE-REVIEW-GRAPH` (ignorado pelo Git).
 - O primeiro `build` encerrou sem o pos-processamento; `postprocess` manual
   completou com exit 0.
-- Graphify 0.9.105: extracao AST chegou a 100% (7.656 arquivos code-only) e
-  travou antes de escrever `graph.json`, com CPU ociosa, nas duas rotas
-  (cluster e `--no-cluster`) e tambem no `extract --code-only`. Plano B
-  registrado (CRG + grafo W3); finding em `ESTACIONAMENTO.md`.
-- Gate de grafos: ver `RECEIPT.json` (`w7_graphs.grafo_gate`).
+- Graphify 0.9.105 travou, com CPU ociosa, depois de extrair 100% dos
+  arquivos em tres rotas (cluster, `--no-cluster` e `extract --code-only`,
+  inclusive 1 worker). O grafo foi construido em **26 partes** menores
+  (cada uma completou) e unido com `graphify merge-graphs`:
+  **80.042 nos, 234.054 links**, 88,6 MB em `.agents/GRAPHIFY`.
+  Uma extracao de fumaça (45 arquivos) provou que a ferramenta funciona e
+  que a falha depende do tamanho do corpus.
+- Gate de grafos (`grafo_gate.py`, exit medido sem pipe): **exit 1** em
+  `.agents/ARQUEOLOGIA/W7-grafo-gate.txt`. Cinco de seis checagens verdes
+  (span, ordem de linhas, faixa de funcoes, FTS vs SQL, graphify frescor vs
+  HEAD). A checagem de "lixo" e falso-positivo de dominio: `JUNK_DIRS` fixa
+  `.agents` e `skills`, mas OpenBot tem marketplace de skills de produto e
+  uma superficie `.agents` propria. Plano B: grafo W3 (100% das fontes) +
+  as cinco checagens substantivas do CRG.
 
 ## W8 — metricas e toxicidade
 
