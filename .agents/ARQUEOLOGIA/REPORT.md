@@ -245,6 +245,27 @@ corrobora o podio.
 - Residuo: um lock de rebuild do Graphify, preservado em
   `.agents/LIXEIRA/MANIFEST.md` (metadados sanitizados). Nada apagado sem
   garimpo.
+- `RECEIPT.json` gerado no commit `63f229b` e commitado em `eed928df8`.
+
+## Delta do quadro de ferramentas
+
+O que o projeto passa a ter depois deste bloco:
+
+| Capacidade | Superficie |
+| --- | --- |
+| Estado vivo de retomada | `.agents/ACTIVE.md`, `HANDOFF.md`, `GATILHOS-VIVOS.md`, `napkin.md`, `ESTACIONAMENTO.md`, `PENDENTES.md`, `PLAN-TASKS/INDEX.md` |
+| Memoria local V2 | `.agents/lembranca.md` + 10 arquivos em `.agents/memorias/` |
+| Grafo estrutural | `.agents/CODE-REVIEW-GRAPH` + `CODE-REVIEW-GRAPH-INDEX.md` |
+| Grafo semantico por partes | `.agents/GRAPHIFY` (80.042 nos, 234.054 links) |
+| Hooks de grafo | `.githooks/pre-commit` (bloco CRG) + `post-checkout`/`post-merge`/`post-rewrite`; hooks de plataforma Codex/Claude |
+| Harness reproduzivel | 13 scripts em `.agents/scripts/` |
+| Mapa do repo | `INDEX.md` na raiz + `.agents/ARQUEOLOGIA/INDEX.md` |
+| Dependencias e DEP-IA | `.agents/ARQUEOLOGIA/DEPENDENCIES.md` |
+| Evidencia bruta | `.agents/ARQUEOLOGIA/W1..W8` + logs W6/W7 |
+| Descarte governado | `.agents/LIXEIRA/MANIFEST.md` |
+
+Ficam fora do Git, por serem configuracao local de ferramenta: `.mcp.json` e
+`.claude/settings.json` (criados pelo `code-review-graph install`).
 
 ## Creditos
 
