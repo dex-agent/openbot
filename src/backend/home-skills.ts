@@ -6,7 +6,7 @@ import { Effect, Option, Schema } from "effect";
 import { readSkillFrontmatter } from "./skill-frontmatter";
 
 export const HOME_SKILL_FOLDER = ".agents/skills";
-const MAX_HOME_SKILLS = 200;
+const MAX_HOME_SKILLS = 2000;
 export const SKILL_OWNERSHIP_MARKER = ".openbot-managed.json";
 const MAX_SKILL_FILE_BYTES = 256 * 1024;
 

@@ -17,7 +17,7 @@ import { OWNERSHIP_MARKER } from "./managed-skill-service";
 const WORKSPACE_SKILL_FOLDERS = [
   ...new Set(AGENT_PROVIDER_DESCRIPTORS.flatMap((descriptor) => descriptor.skillFolders)),
 ];
-const MAX_SKILLS_PER_FOLDER = 200;
+const MAX_SKILLS_PER_FOLDER = 5000;
 const MAX_SKILL_FILE_BYTES = 256 * 1024;
 
 export const listFolderSkills = Effect.fn("SkillFolder.listFolderSkills")(function* (
