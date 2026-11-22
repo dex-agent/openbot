@@ -24,3 +24,10 @@ Modelo de trabalho deste repositorio:
 ## Ultima verificacao
 
 - 2026-11-21: `origin/main` em `6f9c9b01c` (0.76.1). Tetos de 200 confirmados no upstream; correcao nossa `9e7638b03` publicada na branch `fix/skill-picker-200-limit` e mergeada no fork pelo PR #1 (squash `4034585bba`), que agora e a nossa `main`.
+
+## Invariantes de execucao (2026-11-22)
+
+- App dev com a conta de producao: subir SEM `OPENBOT_AUTH_API_URL` local (ou com `https://openbot.run`). Apontar para `http://127.0.0.1:3100` cria uma conta local separada com o mesmo e-mail (ids diferentes) e o host perde presenca para web e mobile.
+- Base atualizada: rodar `bun run --cwd apps/auth-api db:migrate:local` antes de subir o app. D1 desatualizado responde `D1 call failed` e todo refresh de servidores falha com 500.
+- Sintoma de conta errada: `auth.getState().user.id` diferente do id que o web client usa; `servers.list()` sem o servidor esperado e web/mobile mostrando "O computador ficou offline".
+- Verificacao rapida: `servers.list()` deve mostrar o servidor com `state: "online"`, `role: "owner"` e `apiUrl: wss://signal-us.openbot.run/v1/signal`.
