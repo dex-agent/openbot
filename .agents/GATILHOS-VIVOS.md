@@ -6,6 +6,7 @@ Fonte viva vence memória.
 | Gatilho | Quem | Quando lembrar | Fonte viva / ação |
 | --- | --- | --- | --- |
 | STALENESS-ARTEFATOS-DERIVADOS | sessão do projeto (fiscal: `dex-fechamento-projeto-atualizado`) | antes de ler ou citar CRG, Graphify, PLAYBOOK, INDEX, receipt de capacidade ou fluxo de decisão | comparação de 3 números abaixo; regenerar antes de citar |
+| MERGE-CHECK-HOOK-PRE-MERGE | hook do repo `.githooks/pre-merge-commit` | todo `git merge` local neste repo | `tools/hooks/merge-check.conf` + escape `MERGE_CHECK_SKIP=1` |
 | CRG-LOCAL-STRUCTURAL-GRAPH | sessão do projeto | review estrutural, impacto, arquitetura, antes de citação do grafo | `code-review-graph status --repo . --data-dir .agents/CODE-REVIEW-GRAPH` |
 
 ## STALENESS-ARTEFATOS-DERIVADOS
@@ -15,7 +16,7 @@ Fonte viva vence memória.
 - **Como**: comparar SEMPRE três números: (a) quando a FONTE mudou — `git log -1 --format=%cI` no repo (ou `stat -c %y` dos arquivos-fonte); (b) quando o ARTEFATO foi gerado — o timestamp do próprio artefato (comando de status ou `stat` do arquivo); (c) se fonte > artefato então STALE: rodar o comando de regeneração do artefato e só depois citar o conteúdo. Staleness é medido em segundos, nunca "parece atual".
 - **Quando**: antes de qualquer leitura ou citação de artefato derivado — janela fria, re-arqueologia, review estrutural, decisão que diz "o grafo diz X", relatório que cita PLAYBOOK, INDEX ou receipt de capacidade.
 - **Onde**: este hub, mais os comandos por artefato inventariados neste repo:
-  - CRG estrutural — artefato `.agents/CODE-REVIEW-GRAPH/graph.db` (campo "Last updated" e "Built at commit"); leitura `code-review-graph status --repo . --data-dir .agents/CODE-REVIEW-GRAPH`; regeneração `code-review-graph build --repo . --data-dir .agents/CODE-REVIEW-GRAPH` (completa) ou `code-review-graph update --repo . --data-dir .agents/CODE-REVIEW-GRAPH` (incremental).
+  - CRG estrutural — artefato `.agents/CODE-REVIEW-GRAPH/graph.db` (campo "Last updated" e "Built at commit"); leitura `code-review-graph status --repo . --data-dir .agents/CODE-REVIEW-GRAPH` e `code-review-graph doctor` (read-only; "built at X but HEAD is Y" = stale); regeneração `code-review-graph build --repo . --data-dir .agents/CODE-REVIEW-GRAPH` (completa) ou `code-review-graph update --repo . --data-dir .agents/CODE-REVIEW-GRAPH` (incremental).
   - Graphify semântico — artefatos `.agents/GRAPHIFY/graphify-out/graph.json` e `.agents/GRAPHIFY-PARTS/*/graphify-out/graph.json` (existe `graphify` no PATH); staleness por `stat -c %y` do `graph.json` contra `git log -1 --format=%cI`; regeneração pela skill `graphify` (extract) com o corpus atual.
   - PLAYBOOK — ausente neste repo (`PLAYBOOK.md` e `PLAYBOOK.index.json` não existem); nada a citar.
   - INDEX.md de raiz e subpastas — ausente neste repo; se um dia existir, drift é linha morta ou ponta solta e o fiscal é `dex-fechamento-projeto-atualizado`.
@@ -33,3 +34,15 @@ Fonte viva vence memória.
 - **Onde**: `.agents/CODE-REVIEW-GRAPH/`, recibo em `.agents/CODE-REVIEW-GRAPH-INDEX.md` e ponteiro no `AGENTS.md`.
 - **E se?? o status disser INCOMPLETE?** → não citar números; rodar `build` até o status mostrar o commit atual e o build completo.
 - **E se?? o grafo não cobrir a linguagem?** → declarar a lacuna e usar fonte viva (rg, testes, documentação).
+
+## MERGE-CHECK-HOOK-PRE-MERGE
+
+- **Quem**: o hook do repositório (`core.hooksPath = .githooks`), instalação e manutenção pela sessão do projeto.
+- **Por que**: sem gate, merge que quebra nasce. O hook roda o merge-check de três vias antes de o commit de merge existir, então conflito semântico não entra na `main`.
+- **Como**: `.githooks/pre-merge-commit` lê `tools/hooks/merge-check.conf` (`SUITE="bun run test:desktop"`). Sem merge em curso, sai em silêncio. `MERGE_CHECK_SKIP=1` ou `git merge --no-verify` passam com uma linha de aviso. Merge sem resolução manual roda `code-review-graph merge-check --repo . --base BASE --ours OURS --theirs THEIRS --test-failure-exit 1 -- <SUITE>`: exit 0 libera, exit 1 bloqueia com inspeção, exit 2 (execution_error) reporta e não bloqueia. Merge já resolvido à mão roda a suíte direto no worktree.
+- **Quando**: todo `git merge` local neste repositório; antes de qualquer merge que precise nascer verde.
+- **Onde**: `.githooks/pre-merge-commit`, `tools/hooks/merge-check.conf`, `core.hooksPath` vigente.
+- **E se?? o merge vier por PR remoto?** → o hook local não roda; o agente executa o `merge-check` completo antes de aprovar o merge.
+- **E se?? o índice CRG estiver stale?** → não invalida o gate: o `merge-check` constrói laboratório próprio; a citação do grafo é que segue a regra `STALENESS-ARTEFATOS-DERIVADOS`.
+- **E se?? a suíte não estiver instalada no checkout do merge?** → o merge-check devolve execution_error (exit 2) e o merge não é bloqueado por suíte doente.
+

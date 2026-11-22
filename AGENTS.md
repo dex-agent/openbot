@@ -453,5 +453,7 @@ Measured on 2026-11-20 at `140d75f31547`. The full W0-W10 report is in
   [.agents/ESTACIONAMENTO.md](.agents/ESTACIONAMENTO.md).
 - Structural graph: `CRG-LOCAL-STRUCTURAL-GRAPH` in
   [.agents/CODE-REVIEW-GRAPH-INDEX.md](.agents/CODE-REVIEW-GRAPH-INDEX.md).
+- Merge of branches is gated by the `pre-merge-commit` hook (escape `MERGE_CHECK_SKIP=1`); a derived
+  artifact is cited only after a staleness check, as [.agents/GATILHOS-VIVOS.md](.agents/GATILHOS-VIVOS.md) says.
 - Embedded dependency guidance: [.agents/ARQUEOLOGIA/DEPENDENCIES.md](.agents/ARQUEOLOGIA/DEPENDENCIES.md).
 

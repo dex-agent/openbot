@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+set -u
+
+if [ "${MERGE_CHECK_SKIP:-0}" = "1" ]; then
+  echo "merge-check gate: skipped by MERGE_CHECK_SKIP=1"
+  exit 0
+fi
+
+GIT_DIR_PATH="$(git rev-parse --git-dir 2>/dev/null || true)"
+if [ -z "${GIT_DIR_PATH}" ]; then
+  GIT_DIR_PATH="${GIT_DIR:-.git}"
+fi
+
+if [ ! -f "${GIT_DIR_PATH}/MERGE_HEAD" ]; then
+  exit 0
+fi
+
+ROOT="$(git rev-parse --show-toplevel)"
+CONF="${ROOT}/tools/hooks/merge-check.conf"
+SUITE=""
+if [ -f "${CONF}" ]; then
+  SUITE="$(sed -n 's/^SUITE="\(.*\)"$/\1/p' "${CONF}" | head -n 1)"
+fi
+
+if [ -z "${SUITE}" ]; then
+  echo "merge-check gate: no SUITE declared in tools/hooks/merge-check.conf, merge allowed"
+  exit 0
+fi
+
+OURS="$(git rev-parse HEAD)"
+THEIRS="$(git rev-parse MERGE_HEAD)"
+BASE="$(git merge-base HEAD MERGE_HEAD)"
+MESSAGE_FILE="${GIT_DIR_PATH}/MERGE_MSG"
+
+if grep -q '^# Conflicts:' "${MESSAGE_FILE}" 2>/dev/null; then
+  echo "merge-check gate: resolved-merge, suite on the worktree"
+  bash -c "${SUITE}"
+  STATUS=$?
+  if [ "${STATUS}" -eq 0 ]; then
+    echo "merge-check gate: resolved-merge passed"
+    exit 0
+  fi
+  echo "merge-check gate: resolved-merge failed"
+  echo "exit: ${STATUS}"
+  echo "inspect: bash -c '${SUITE}' in the resolved worktree"
+  exit 1
+fi
+
+code-review-graph merge-check --repo . --base "${BASE}" --ours "${OURS}" --theirs "${THEIRS}" --test-failure-exit 1 -- ${SUITE}
+STATUS=$?
+
+if [ "${STATUS}" -eq 0 ]; then
+  echo "merge-check gate: passed"
+  exit 0
+fi
+
+if [ "${STATUS}" -eq 1 ]; then
+  echo "merge-check gate: conflicted merge (text or semantic)"
+  echo "exit: 1"
+  echo "inspect: code-review-graph merge-check --repo . --base ${BASE} --ours ${OURS} --theirs ${THEIRS} --test-failure-exit 1 -- ${SUITE}"
+  exit 1
+fi
+
+echo "merge-check gate: execution_error, merge not blocked"
+echo "exit: ${STATUS}"
+echo "inspect: run the merge-check by hand and check the suite"
+exit 0
