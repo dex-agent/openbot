@@ -1,0 +1,27 @@
+{
+  "exit": 1,
+  "command": "grafo_gate.py --data-dir .agents/CODE-REVIEW-GRAPH --graphify .agents/GRAPHIFY/graphify-out/graph.json --min-functions 40000 --max-functions 50000 --max-span 4000 --repo .",
+  "checks": {
+    "junk_paths": false,
+    "span": true,
+    "line_order": true,
+    "function_count": true,
+    "fts_vs_sql": true,
+    "graphify_built_at_commit": true
+  },
+  "junk_false_positive": {
+    "reason": "JUNK_DIRS hardcoded includes .agents and skills; OpenBot has a product skills marketplace and its own .agents surface",
+    "nodes_with_skills_in_path": 1048,
+    "nodes_with_dot_agents_in_path": 603,
+    "product_paths_with_skills": [
+      "apps/auth-api",
+      "src/renderer",
+      "packages/contracts",
+      "apps/mobile",
+      "scripts/*skills*",
+      "marketplace/production-catalog"
+    ]
+  },
+  "plan_b": "W3 import graph (100% of 7701 sources) + CRG substantive checks (span, order, function count, FTS, graphify freshness)",
+  "source": "W7-grafo-gate.txt"
+}

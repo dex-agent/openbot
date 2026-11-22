@@ -1,0 +1,1556 @@
+{
+  "summary": {
+    "total": 168,
+    "runtime": 132,
+    "dev": 36,
+    "missing_install": [],
+    "license_counts": {
+      "MIT": 129,
+      "Apache-2.0": 14,
+      "SEE LICENSE IN README.md": 1,
+      "MIT OR Apache-2.0": 3,
+      "BSD-3-Clause": 4,
+      "OFL-1.1": 1,
+      "(unknown)": 7,
+      "PolyForm-Noncommercial-1.0.0": 2,
+      "CC0-1.0": 1,
+      "MPL-2.0": 1,
+      "ISC": 4,
+      "BlueOak-1.0.0": 1
+    },
+    "without_license": [
+      "@openbot/brand",
+      "@openbot/contracts",
+      "@openbot/i18n",
+      "@openbot/logging",
+      "@openbot/team-client",
+      "@openbot/user-errors",
+      "@openbot/whatsapp"
+    ],
+    "copyleft": [
+      {
+        "name": "axe-core",
+        "declared": "4.14.0",
+        "scope": "dev",
+        "declared_by": ".",
+        "installed_version": "4.14.0",
+        "license": "MPL-2.0",
+        "installed": true
+      }
+    ]
+  },
+  "rows": [
+    {
+      "name": "@1password/sdk",
+      "declared": "0.5.0",
+      "scope": "runtime",
+      "declared_by": ".",
+      "installed_version": "0.5.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@agentclientprotocol/sdk",
+      "declared": "1.9.0",
+      "scope": "runtime",
+      "declared_by": ".",
+      "installed_version": "1.9.0",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "@anthropic-ai/claude-agent-sdk",
+      "declared": "0.3.309",
+      "scope": "runtime",
+      "declared_by": ".",
+      "installed_version": "0.3.309",
+      "license": "SEE LICENSE IN README.md",
+      "installed": true
+    },
+    {
+      "name": "@anthropic-ai/sdk",
+      "declared": "0.137.0",
+      "scope": "runtime",
+      "declared_by": ".",
+      "installed_version": "0.137.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@biomejs/biome",
+      "declared": "2.5.13",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "2.5.13",
+      "license": "MIT OR Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "@cacheable/node-cache",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/whatsapp",
+      "installed_version": "1.7.6",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@cloudflare/vite-plugin",
+      "declared": "1.65.0",
+      "scope": "dev",
+      "declared_by": "apps/auth-api",
+      "installed_version": "1.65.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@cloudflare/workers-types",
+      "declared": "catalog:",
+      "scope": "dev",
+      "declared_by": "apps/auth-api,apps/mobile-updates,apps/site-router",
+      "installed_version": "5.20261023.1",
+      "license": "MIT OR Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "@config-plugins/react-native-webrtc",
+      "declared": "15.0.2",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "15.0.2",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@discordjs/rest",
+      "declared": "2.6.3",
+      "scope": "runtime",
+      "declared_by": "remote/api",
+      "installed_version": "2.6.3",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "@discordjs/ws",
+      "declared": "2.0.4",
+      "scope": "runtime",
+      "declared_by": "remote/api",
+      "installed_version": "2.0.4",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "@dotenvx/dotenvx",
+      "declared": "^2.38.2",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "2.38.2",
+      "license": "BSD-3-Clause",
+      "installed": true
+    },
+    {
+      "name": "@e2e-dev/web",
+      "declared": "0.15.5",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "0.15.5",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "@electron/fuses",
+      "declared": "1.8.0",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "1.8.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@expo/metro-runtime",
+      "declared": "~58.0.17",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.17",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@expo/ui",
+      "declared": "~58.0.28",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.28",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@fontsource-variable/inter",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api,apps/status",
+      "installed_version": "5.3.0",
+      "license": "OFL-1.1",
+      "installed": true
+    },
+    {
+      "name": "@hapi/boom",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/whatsapp",
+      "installed_version": "9.1.4",
+      "license": "BSD-3-Clause",
+      "installed": true
+    },
+    {
+      "name": "@jitl/quickjs-wasmfile-release-sync",
+      "declared": "0.32.0",
+      "scope": "runtime",
+      "declared_by": ".",
+      "installed_version": "0.32.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@kobalte/core",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api,packages/ui",
+      "installed_version": "2.0.0-alpha.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@legendapp/list",
+      "declared": "3.7.2",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "3.7.2",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@modelcontextprotocol/client",
+      "declared": "2.4.0",
+      "scope": "runtime",
+      "declared_by": ".",
+      "installed_version": "2.4.0",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "@modelcontextprotocol/sdk",
+      "declared": "1.32.1",
+      "scope": "runtime",
+      "declared_by": ".",
+      "installed_version": "1.32.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@muse-code/sdk",
+      "declared": "1.4.12",
+      "scope": "runtime",
+      "declared_by": ".",
+      "installed_version": "1.4.12",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@noble/curves",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/whatsapp",
+      "installed_version": "2.4.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@noble/ed25519",
+      "declared": "3.2.0",
+      "scope": "runtime",
+      "declared_by": "packages/team-client",
+      "installed_version": "3.2.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@noble/hashes",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/mobile,packages/team-client,packages/whatsapp",
+      "installed_version": "2.4.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@norbert_bodziony/bloub",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/mobile,packages/brand,packages/ui",
+      "installed_version": "0.6.7",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@openbot/brand",
+      "declared": "workspace:*",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api,apps/mobile,apps/status,packages/ui",
+      "installed_version": "0.0.0",
+      "license": null,
+      "installed": true
+    },
+    {
+      "name": "@openbot/contracts",
+      "declared": "workspace:*",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api,apps/mobile,apps/site-router,packages/brand,packages/i18n,packages/team-client,packages/telemetry,packages/ui,packages/user-errors,remote/api",
+      "installed_version": "0.0.0",
+      "license": null,
+      "installed": true
+    },
+    {
+      "name": "@openbot/i18n",
+      "declared": "workspace:*",
+      "scope": "runtime",
+      "declared_by": ".,apps/mobile,packages/team-client,packages/ui,packages/user-errors",
+      "installed_version": "0.0.0",
+      "license": null,
+      "installed": true
+    },
+    {
+      "name": "@openbot/logging",
+      "declared": "workspace:*",
+      "scope": "runtime",
+      "declared_by": ".,apps/mobile,apps/status,packages/user-errors",
+      "installed_version": "0.0.0",
+      "license": null,
+      "installed": true
+    },
+    {
+      "name": "@openbot/team-client",
+      "declared": "workspace:*",
+      "scope": "runtime",
+      "declared_by": ".,apps/mobile,packages/ui",
+      "installed_version": "0.0.0",
+      "license": null,
+      "installed": true
+    },
+    {
+      "name": "@openbot/telemetry",
+      "declared": "workspace:*",
+      "scope": "runtime",
+      "declared_by": ".,apps/mobile,packages/ui",
+      "installed_version": "0.0.0",
+      "license": "PolyForm-Noncommercial-1.0.0",
+      "installed": true
+    },
+    {
+      "name": "@openbot/ui",
+      "declared": "workspace:*",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api",
+      "installed_version": "0.0.0",
+      "license": "PolyForm-Noncommercial-1.0.0",
+      "installed": true
+    },
+    {
+      "name": "@openbot/user-errors",
+      "declared": "workspace:*",
+      "scope": "runtime",
+      "declared_by": ".,apps/mobile,packages/team-client,packages/ui",
+      "installed_version": "0.0.0",
+      "license": null,
+      "installed": true
+    },
+    {
+      "name": "@openbot/whatsapp",
+      "declared": "workspace:*",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "0.0.0",
+      "license": null,
+      "installed": true
+    },
+    {
+      "name": "@openpanel/react-native",
+      "declared": "1.4.4",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "1.4.4",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@openpanel/web",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api",
+      "installed_version": "1.4.2",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@paper-design/shaders",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api",
+      "installed_version": "0.0.80",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "@react-native-masked-view/masked-view",
+      "declared": "0.3.2",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "0.3.2",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@shopify/react-native-skia",
+      "declared": "2.14.0",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "2.14.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@solidjs/signals",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": "apps/auth-api",
+      "installed_version": "2.0.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@solidjs/testing-library",
+      "declared": "catalog:",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "1.0.0-rc.2",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@solidjs/vite-plugin",
+      "declared": "catalog:",
+      "scope": "dev",
+      "declared_by": ".,apps/auth-api,apps/status",
+      "installed_version": "3.0.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@solidjs/web",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api,apps/status",
+      "installed_version": "2.0.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@speed-highlight/core",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/mobile,packages/ui",
+      "installed_version": "1.2.24",
+      "license": "CC0-1.0",
+      "installed": true
+    },
+    {
+      "name": "@storybook/addon-a11y",
+      "declared": "10.6.3",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "10.6.3",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@tailwindcss/vite",
+      "declared": "catalog:",
+      "scope": "dev",
+      "declared_by": ".,apps/auth-api",
+      "installed_version": "4.3.3",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@tanstack/react-query",
+      "declared": "^5.107.1",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "5.107.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@tanstack/solid-router",
+      "declared": "2.0.0-rc.9",
+      "scope": "runtime",
+      "declared_by": "apps/auth-api",
+      "installed_version": "2.0.0-rc.9",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@tanstack/solid-start",
+      "declared": "2.0.0-rc.9",
+      "scope": "runtime",
+      "declared_by": "apps/auth-api",
+      "installed_version": "2.0.0-rc.9",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@tanstack/virtual-core",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/ui",
+      "installed_version": "3.19.7",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@testing-library/jest-dom",
+      "declared": "catalog:",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "7.0.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@types/bun",
+      "declared": "1.4.4",
+      "scope": "dev",
+      "declared_by": "remote/api",
+      "installed_version": "1.4.4",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@types/node",
+      "declared": "catalog:",
+      "scope": "dev",
+      "declared_by": ".,apps/auth-api,apps/status,packages/i18n,packages/telemetry,packages/user-errors,packages/whatsapp",
+      "installed_version": "24.19.2",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@types/qrcode",
+      "declared": "^1.5.6",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "1.5.6",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@types/react",
+      "declared": "~19.3.0",
+      "scope": "dev",
+      "declared_by": "apps/mobile",
+      "installed_version": "19.3.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@types/react-dom",
+      "declared": "~19.3.0",
+      "scope": "dev",
+      "declared_by": "apps/mobile",
+      "installed_version": "19.3.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "@types/ws",
+      "declared": "8.18.2",
+      "scope": "dev",
+      "declared_by": ".,packages/whatsapp",
+      "installed_version": "8.18.2",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "async-mutex",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/whatsapp",
+      "installed_version": "0.5.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "axe-core",
+      "declared": "4.14.0",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "4.14.0",
+      "license": "MPL-2.0",
+      "installed": true
+    },
+    {
+      "name": "class-variance-authority",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api,packages/ui",
+      "installed_version": "0.7.1",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "cuelume",
+      "declared": "0.2.8",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "0.2.8",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "discord-api-types",
+      "declared": "0.38.57",
+      "scope": "runtime",
+      "declared_by": "remote/api",
+      "installed_version": "0.38.57",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "e2e",
+      "declared": "0.23.0",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "0.23.0",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "effect",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api,apps/mobile,apps/mobile-updates,apps/site-router,apps/status,packages/team-client,packages/telemetry,packages/whatsapp,remote/api",
+      "installed_version": "4.0.6",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "electron",
+      "declared": "45.3.0",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "45.3.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "electron-builder",
+      "declared": "26.18.0",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "26.18.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "electron-updater",
+      "declared": "6.8.11",
+      "scope": "runtime",
+      "declared_by": ".",
+      "installed_version": "6.8.11",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "electron-vite",
+      "declared": "6.0.0",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "6.0.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "elysia",
+      "declared": "1.4.30",
+      "scope": "runtime",
+      "declared_by": "remote/api",
+      "installed_version": "1.4.30",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "emoji-regex",
+      "declared": "10.6.0",
+      "scope": "runtime",
+      "declared_by": "packages/contracts",
+      "installed_version": "10.6.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo",
+      "declared": "~58.0.25",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.25",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-application",
+      "declared": "~58.1.2",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.1.2",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-blur",
+      "declared": "~58.0.6",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.6",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-build-properties",
+      "declared": "~58.0.12",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.12",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-camera",
+      "declared": "~58.0.14",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.14",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-clipboard",
+      "declared": "~58.0.4",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.4",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-constants",
+      "declared": "~58.0.16",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.16",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-crypto",
+      "declared": "~58.0.8",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.8",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-dev-client",
+      "declared": "~58.0.20",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.20",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-device",
+      "declared": "~58.0.5",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.5",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-device-hub",
+      "declared": "0.23.2",
+      "scope": "dev",
+      "declared_by": "apps/mobile",
+      "installed_version": "0.23.2",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-document-picker",
+      "declared": "~58.0.5",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.5",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-file-system",
+      "declared": "~58.0.13",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.13",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-font",
+      "declared": "~58.0.12",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.12",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-glass-effect",
+      "declared": "~58.0.5",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.5",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-haptics",
+      "declared": "~58.0.8",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.8",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-image",
+      "declared": "~58.0.18",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.18",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-image-manipulator",
+      "declared": "~58.0.16",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.16",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-image-picker",
+      "declared": "~58.0.10",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.10",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-keep-awake",
+      "declared": "~58.0.4",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.4",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-linking",
+      "declared": "~58.0.17",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.17",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-local-authentication",
+      "declared": "~58.0.3",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.3",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-localization",
+      "declared": "~58.0.5",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.5",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-media-library",
+      "declared": "~58.0.14",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.14",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-network",
+      "declared": "~58.0.5",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.5",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-notifications",
+      "declared": "~58.1.9",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.1.9",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-router",
+      "declared": "~58.0.31",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.31",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-secure-store",
+      "declared": "~58.0.3",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.3",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-sharing",
+      "declared": "~58.0.23",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.23",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-speech-recognition",
+      "declared": "58.0.1",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-splash-screen",
+      "declared": "~58.0.14",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.14",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-status-bar",
+      "declared": "~58.0.5",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.5",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-symbols",
+      "declared": "~58.0.5",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.5",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-system-ui",
+      "declared": "~58.0.7",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.7",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-updates",
+      "declared": "~58.0.22",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.22",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-video",
+      "declared": "~58.0.14",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.14",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-web-browser",
+      "declared": "~58.0.8",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.8",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "expo-widgets",
+      "declared": "~58.0.28",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "58.0.28",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "fflate",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api,packages/contracts",
+      "installed_version": "0.8.3",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "heroui-native",
+      "declared": "^1.0.11",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "1.0.11",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "jose",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api,remote/api",
+      "installed_version": "6.2.13",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "jsdom",
+      "declared": "catalog:",
+      "scope": "dev",
+      "declared_by": ".,apps/auth-api",
+      "installed_version": "30.0.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "katex",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/mobile,packages/ui",
+      "installed_version": "0.19.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "knip",
+      "declared": "6.42.1",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "6.42.1",
+      "license": "ISC",
+      "installed": true
+    },
+    {
+      "name": "koffi",
+      "declared": "3.3.5",
+      "scope": "runtime",
+      "declared_by": ".",
+      "installed_version": "3.3.5",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "long",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/whatsapp",
+      "installed_version": "5.3.2",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "lru-cache",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/whatsapp",
+      "installed_version": "11.5.3",
+      "license": "BlueOak-1.0.0",
+      "installed": true
+    },
+    {
+      "name": "lucide-react-native",
+      "declared": "^1.73.0",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "1.73.0",
+      "license": "ISC",
+      "installed": true
+    },
+    {
+      "name": "lucide-solid",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/status,packages/ui",
+      "installed_version": "1.33.0",
+      "license": "ISC",
+      "installed": true
+    },
+    {
+      "name": "marked",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/mobile,packages/contracts,packages/ui",
+      "installed_version": "18.1.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "mermaid",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": "apps/mobile,packages/ui",
+      "installed_version": "12.2.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "music-metadata",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/whatsapp",
+      "installed_version": "11.16.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "p-queue",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/whatsapp",
+      "installed_version": "9.3.5",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "pdfjs-dist",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "6.4.299",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "pino",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/whatsapp",
+      "installed_version": "9.14.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "playwright-core",
+      "declared": "1.64.1",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "1.64.1",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "protobufjs",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/whatsapp",
+      "installed_version": "7.6.6",
+      "license": "BSD-3-Clause",
+      "installed": true
+    },
+    {
+      "name": "qrcode",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/ui",
+      "installed_version": "1.5.4",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "quickjs-emscripten-core",
+      "declared": "0.32.0",
+      "scope": "runtime",
+      "declared_by": ".",
+      "installed_version": "0.32.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react",
+      "declared": "19.3.0",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "19.3.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react-dom",
+      "declared": "19.3.0",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "19.3.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react-native",
+      "declared": "0.88.1",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "0.88.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react-native-gesture-handler",
+      "declared": "~3.3.0",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "3.3.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react-native-keyboard-controller",
+      "declared": "1.22.7",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "1.22.7",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react-native-reanimated",
+      "declared": "4.7.1",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "4.7.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react-native-reserved-regions",
+      "declared": "0.2.0",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "0.2.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react-native-safe-area-context",
+      "declared": "~5.11.1",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "5.11.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react-native-screens",
+      "declared": "~4.30.1",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "4.30.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react-native-svg",
+      "declared": "15.16.0",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "15.16.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react-native-web",
+      "declared": "~0.21.4",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "0.21.4",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react-native-webrtc",
+      "declared": "155.0.1",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "155.0.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react-native-webview",
+      "declared": "14.0.1",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "14.0.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "react-native-worklets",
+      "declared": "0.13.0",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "0.13.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "smol-toml",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".",
+      "installed_version": "1.9.0",
+      "license": "BSD-3-Clause",
+      "installed": true
+    },
+    {
+      "name": "solid-js",
+      "declared": "2.0.0",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api,apps/status",
+      "installed_version": "2.0.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "solid-recharts",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/ui",
+      "installed_version": "1.0.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "solid-sonner",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,packages/ui",
+      "installed_version": "0.3.2",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "storybook",
+      "declared": "^10.6.3",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "10.6.3",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "storybook-solidjs-vite",
+      "declared": "^10.7.1",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "10.7.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "tailwind-merge",
+      "declared": "^3.7.0",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "3.7.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "tailwind-variants",
+      "declared": "^3.3.1",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "3.3.1",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "tailwindcss",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api,apps/mobile",
+      "installed_version": "4.3.3",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "tldts",
+      "declared": "7.4.19",
+      "scope": "runtime",
+      "declared_by": ".",
+      "installed_version": "7.4.19",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "ts-log",
+      "declared": "3.0.3",
+      "scope": "runtime",
+      "declared_by": "packages/logging",
+      "installed_version": "3.0.3",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "tsrs",
+      "declared": "0.16.0-ts7.1.0-dev.20260929",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "0.16.0-ts7.1.0-dev.20260929",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "tsx",
+      "declared": "^4.23.15",
+      "scope": "dev",
+      "declared_by": ".",
+      "installed_version": "4.23.15",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "typescript",
+      "declared": "catalog:",
+      "scope": "dev",
+      "declared_by": ".,apps/auth-api,apps/mobile,apps/mobile-updates,apps/site-router,apps/status,packages/brand,packages/contracts,packages/i18n,packages/logging,packages/team-client,packages/telemetry,packages/user-errors,packages/whatsapp,remote/api",
+      "installed_version": "7.0.2",
+      "license": "Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "uniwind",
+      "declared": "^1.13.2",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "1.13.2",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "vite",
+      "declared": "catalog:",
+      "scope": "dev",
+      "declared_by": ".,apps/auth-api,apps/status",
+      "installed_version": "8.3.5",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "vitest",
+      "declared": "catalog:",
+      "scope": "dev",
+      "declared_by": ".,apps/auth-api,packages/logging",
+      "installed_version": "4.1.12",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "wrangler",
+      "declared": "catalog:",
+      "scope": "dev",
+      "declared_by": "apps/auth-api,apps/mobile-updates,apps/site-router",
+      "installed_version": "4.152.0",
+      "license": "MIT OR Apache-2.0",
+      "installed": true
+    },
+    {
+      "name": "ws",
+      "declared": "8.22.0",
+      "scope": "runtime",
+      "declared_by": ".,packages/whatsapp",
+      "installed_version": "8.22.0",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "yaml",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api",
+      "installed_version": "2.9.1",
+      "license": "ISC",
+      "installed": true
+    },
+    {
+      "name": "zod",
+      "declared": "catalog:",
+      "scope": "runtime",
+      "declared_by": ".,apps/auth-api,apps/mobile,packages/ui,remote/api",
+      "installed_version": "4.6.7",
+      "license": "MIT",
+      "installed": true
+    },
+    {
+      "name": "zustand",
+      "declared": "^5.1.0",
+      "scope": "runtime",
+      "declared_by": "apps/mobile",
+      "installed_version": "5.1.0",
+      "license": "MIT",
+      "installed": true
+    }
+  ]
+}

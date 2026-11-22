@@ -1,0 +1,63 @@
+Installing MCP server config...
+  C:\Users\jumper\.codex\config.toml holds a hand-written 'code-review-graph' entry — leaving it as it is.
+  [dry-run] Claude Code: would write .mcp.json
+  [dry-run] DeepSeek Harness: would write ~/.dsh/cordis.patch.yml
+
+[dry-run] Would configure 2 platform(s): Claude Code, DeepSeek Harness
+Not found here, so not set up: cursor, windsurf, zed, continue, opencode, mimo, antigravity, gemini-cli, qwen, kiro, qoder, copilot, copilot-cli, hermes, codebuddy.
+Add one anyway with: code-review-graph install --platform NAME
+
+[dry-run] Install would change 4 file(s):
+
+--- /dev/null
++++ b/.mcp.json
+@@ -0,0 +1,13 @@
++{
++  "mcpServers": {
++    "code-review-graph": {
++      "command": "uvx",
++      "args": [
++        "code-review-graph",
++        "serve"
++      ],
++      "cwd": "C:\\CodexProjetos\\openbot",
++      "type": "stdio"
++    }
++  }
++}
+
+--- /dev/null
++++ ~/.dsh/cordis.patch.yml
+@@ -0,0 +1,10 @@
++- insert:
++    - id: mcp-code-review-graph
++      name: '@deepseek-ai/dsh-mcp-client'
++      config:
++        serverName: code-review-graph
++        transport: stdio
++        command: uvx
++        args:
++          - code-review-graph
++          - serve
+
+--- a/.gitignore
++++ b/.gitignore
+@@ -59,3 +59,5 @@
+ /TASKS.md
+ 
+ .openbot/
++# Added by code-review-graph
++.code-review-graph/
+
+--- /dev/null
++++ b/.code-review-graph/install-manifest.json
+@@ -0,0 +1,7 @@
++{
++  "version": 1,
++  "files": [
++    ".gitignore",
++    ".mcp.json"
++  ]
++}
+
+[dry-run] No files were modified.

@@ -1,0 +1,30 @@
+{
+  "source_files": 7701,
+  "internal_edges": 35702,
+  "unresolved_relative": 986,
+  "cycles": 34,
+  "cycle_nodes": 427,
+  "top_fan_in": [
+    [
+      "packages/contracts/src/ipc.ts",
+      2036
+    ],
+    [
+      "packages/i18n/src/message.ts",
+      1600
+    ],
+    [
+      "packages/contracts/src/runtime-values.ts",
+      835
+    ],
+    [
+      "packages/ui/src/text.tsx",
+      689
+    ],
+    [
+      "src/backend/effect-boundary.ts",
+      555
+    ]
+  ]
+}
+graph_exit=0

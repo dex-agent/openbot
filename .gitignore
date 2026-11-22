@@ -59,3 +59,14 @@ keys
 /TASKS.md
 
 .openbot/
+
+graphify-out/
+.agents/GRAPHIFY/
+.agents/GRAPHIFY-PARTS/
+.agents/GRAPHIFY-SMOKE/
+.agents/.dex-memoria/
+.agents/LIXEIRA/
+.agents-backups/
+.code-review-graph/
+.mcp.json
+.claude/settings.json

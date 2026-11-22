@@ -1,0 +1,688 @@
+{
+  "god_class": [
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent-service.ts",
+      "name": "AgentService",
+      "line_start": 506,
+      "line_end": 6905,
+      "span": 6400,
+      "methods": 233
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/mailbox-store.ts",
+      "name": "MailboxStore",
+      "line_start": 263,
+      "line_end": 3640,
+      "span": 3378,
+      "methods": 103
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/openbot-database.ts",
+      "name": "OpenBotDatabase",
+      "line_start": 88,
+      "line_end": 673,
+      "span": 586,
+      "methods": 88
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent/provider-runtime.ts",
+      "name": "ProviderRuntime",
+      "line_start": 314,
+      "line_end": 4270,
+      "span": 3957,
+      "methods": 70
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/browser-host.ts",
+      "name": "BrowserHost",
+      "line_start": 497,
+      "line_end": 4496,
+      "span": 4000,
+      "methods": 63
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/channel-service.ts",
+      "name": "ChannelService",
+      "line_start": 162,
+      "line_end": 3730,
+      "span": 3569,
+      "methods": 62
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent/conversation-runtime.ts",
+      "name": "ConversationRuntime",
+      "line_start": 116,
+      "line_end": 933,
+      "span": 818,
+      "methods": 58
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/mobile/src/features/channels/model/channel-store.ts",
+      "name": "MobileChannelStore",
+      "line_start": 105,
+      "line_end": 705,
+      "span": 601,
+      "methods": 50
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/main/remote-server-manager.ts",
+      "name": "RemoteServerManager",
+      "line_start": 287,
+      "line_end": 2717,
+      "span": 2431,
+      "methods": 48
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/channel-store.ts",
+      "name": "ChannelStore",
+      "line_start": 118,
+      "line_end": 1095,
+      "span": 978,
+      "methods": 47
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/workflows/workflows.ts",
+      "name": "Workflows",
+      "line_start": 361,
+      "line_end": 2000,
+      "span": 1640,
+      "methods": 46
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/main/host-service.ts",
+      "name": "HostService",
+      "line_start": 296,
+      "line_end": 2081,
+      "span": 1786,
+      "methods": 45
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/browser-cdp.ts",
+      "name": "BrowserCdpEngine",
+      "line_start": 407,
+      "line_end": 3814,
+      "span": 3408,
+      "methods": 40
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent-tasks/agent-tasks.ts",
+      "name": "AgentTasks",
+      "line_start": 91,
+      "line_end": 671,
+      "span": 581,
+      "methods": 39
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent/routine-scheduler.ts",
+      "name": "RoutineScheduler",
+      "line_start": 130,
+      "line_end": 1306,
+      "span": 1177,
+      "methods": 38
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/acp-client.ts",
+      "name": "AcpAgentClient",
+      "line_start": 435,
+      "line_end": 4256,
+      "span": 3822,
+      "methods": 36
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent/turn-lifecycle.ts",
+      "name": "TurnLifecycle",
+      "line_start": 328,
+      "line_end": 3192,
+      "span": 2865,
+      "methods": 35
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent/attention-registry.ts",
+      "name": "AttentionRegistry",
+      "line_start": 496,
+      "line_end": 2478,
+      "span": 1983,
+      "methods": 35
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/main/team-api-server.ts",
+      "name": "TeamApiServer",
+      "line_start": 540,
+      "line_end": 2873,
+      "span": 2334,
+      "methods": 33
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/remote/api/src/signal-service.ts",
+      "name": "SignalService",
+      "line_start": 275,
+      "line_end": 1694,
+      "span": 1420,
+      "methods": 31
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/main/team-webrtc-client-transport.ts",
+      "name": "TeamWebRtcClientTransport",
+      "line_start": 182,
+      "line_end": 1473,
+      "span": 1292,
+      "methods": 31
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/routine-store.ts",
+      "name": "RoutineStore",
+      "line_start": 166,
+      "line_end": 1329,
+      "span": 1164,
+      "methods": 31
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/main/skill-marketplace-service.ts",
+      "name": "SkillMarketplaceService",
+      "line_start": 83,
+      "line_end": 740,
+      "span": 658,
+      "methods": 31
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/mobile/src/features/chat/model/outbox-store.ts",
+      "name": "OutboxStore",
+      "line_start": 72,
+      "line_end": 517,
+      "span": 446,
+      "methods": 30
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent-store.ts",
+      "name": "AgentStore",
+      "line_start": 157,
+      "line_end": 1574,
+      "span": 1418,
+      "methods": 29
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent/context-compaction.ts",
+      "name": "ContextCompaction",
+      "line_start": 102,
+      "line_end": 727,
+      "span": 626,
+      "methods": 29
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/crm/crm-store.ts",
+      "name": "CrmStore",
+      "line_start": 378,
+      "line_end": 714,
+      "span": 337,
+      "methods": 28
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/scripts/stripe-flows-e2e.ts",
+      "name": "Account",
+      "line_start": 387,
+      "line_end": 718,
+      "span": 332,
+      "methods": 28
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/main/provider-runtime-manager.ts",
+      "name": "ProviderRuntimeManager",
+      "line_start": 132,
+      "line_end": 1388,
+      "span": 1257,
+      "methods": 27
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/messaging/messaging-threads.ts",
+      "name": "MessagingThreads",
+      "line_start": 246,
+      "line_end": 1027,
+      "span": 782,
+      "methods": 27
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/main/team-store.ts",
+      "name": "TeamStore",
+      "line_start": 188,
+      "line_end": 1552,
+      "span": 1365,
+      "methods": 25
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent/drain-scheduler.ts",
+      "name": "DrainScheduler",
+      "line_start": 168,
+      "line_end": 1399,
+      "span": 1232,
+      "methods": 25
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/mcp-oauth-provider.ts",
+      "name": "McpOAuthClientProvider",
+      "line_start": 662,
+      "line_end": 1159,
+      "span": 498,
+      "methods": 25
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent-threads/agent-thread-store.ts",
+      "name": "AgentThreadStore",
+      "line_start": 75,
+      "line_end": 482,
+      "span": 408,
+      "methods": 25
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/main/remote-server-connections.ts",
+      "name": "RemoteServerConnections",
+      "line_start": 32,
+      "line_end": 223,
+      "span": 192,
+      "methods": 25
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/mobile/modules/remote-viewer-proxy/ios/RemoteViewerProxyModule.swift",
+      "name": "RemoteViewerServer",
+      "line_start": 68,
+      "line_end": 571,
+      "span": 504,
+      "methods": 24
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/mobile/modules/remote-viewer-proxy/android/src/main/java/run/openbot/remoteviewerproxy/RemoteViewerProxyModule.kt",
+      "name": "RemoteViewerServer",
+      "line_start": 128,
+      "line_end": 579,
+      "span": 452,
+      "methods": 24
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/workflows/workflow-run-store.ts",
+      "name": "WorkflowRunStore",
+      "line_start": 117,
+      "line_end": 483,
+      "span": 367,
+      "methods": 24
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent/openbot-tool-router.ts",
+      "name": "OpenBotToolRouter",
+      "line_start": 471,
+      "line_end": 3460,
+      "span": 2990,
+      "methods": 23
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/auth-api/src/server/skill-marketplace.ts",
+      "name": "SkillMarketplace",
+      "line_start": 79,
+      "line_end": 800,
+      "span": 722,
+      "methods": 23
+    }
+  ],
+  "long_method": [
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/web-client/WebWorkspace.tsx",
+      "name": "WebWorkspaceFrame",
+      "line_start": 456,
+      "line_end": 3909,
+      "span": 3454
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/preview/mock-openbot.ts",
+      "name": "createMockOpenBot",
+      "line_start": 459,
+      "line_end": 3876,
+      "span": 3418
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/main/application-services.ts",
+      "name": "createApplicationServices",
+      "line_start": 964,
+      "line_end": 4266,
+      "span": 3303
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/ui/src/features/workflows/WorkflowCanvas.tsx",
+      "name": "WorkflowCanvas",
+      "line_start": 500,
+      "line_end": 3736,
+      "span": 3237
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/conversation/conversation-scope.ts",
+      "name": "createConversationViewScope",
+      "line_start": 111,
+      "line_end": 2586,
+      "span": 2476
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/mobile/src/features/workspace/context/mobile-workspace-context.tsx",
+      "name": "MobileWorkspaceProvider",
+      "line_start": 375,
+      "line_end": 2659,
+      "span": 2285
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/web-client/web-client-context.tsx",
+      "name": "createWebWorkspace",
+      "line_start": 218,
+      "line_end": 2457,
+      "span": 2240
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/team-client/src/remote-peer.ts",
+      "name": "createRemoteTeamPeer",
+      "line_start": 460,
+      "line_end": 2322,
+      "span": 1863
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/workflows/workflows.ts",
+      "name": "layer",
+      "line_start": 362,
+      "line_end": 1999,
+      "span": 1638
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/conversation/ConversationTimeline.tsx",
+      "name": "ConversationTimeline",
+      "line_start": 133,
+      "line_end": 1753,
+      "span": 1621
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/scripts/browser-smoke-electron.ts",
+      "name": "main",
+      "line_start": 505,
+      "line_end": 2107,
+      "span": 1603
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/settings/marketplace-controller.ts",
+      "name": "createMarketplaceController",
+      "line_start": 230,
+      "line_end": 1814,
+      "span": 1585
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent-service.ts",
+      "name": "constructor",
+      "line_start": 586,
+      "line_end": 2034,
+      "span": 1449
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/ui/src/features/conversation/AgentSettingsPanel.tsx",
+      "name": "AgentSettingsPanel",
+      "line_start": 264,
+      "line_end": 1690,
+      "span": 1427
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/web-client/web-runtime.ts",
+      "name": "createWebWorkspaceRuntime",
+      "line_start": 555,
+      "line_end": 1882,
+      "span": 1328
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/main/ipc/agent-handlers.ts",
+      "name": "agentIpcHandlers",
+      "line_start": 331,
+      "line_end": 1618,
+      "span": 1288
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/mobile/src/features/chat/components/chat-view.tsx",
+      "name": "ChatView",
+      "line_start": 214,
+      "line_end": 1454,
+      "span": 1241
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/ui/src/features/agent-dock/AgentDock.tsx",
+      "name": "AgentDock",
+      "line_start": 285,
+      "line_end": 1525,
+      "span": 1241
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/ui/src/features/files/LibraryPage.tsx",
+      "name": "LibraryPage",
+      "line_start": 123,
+      "line_end": 1341,
+      "span": 1219
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/ui/src/components/ProviderModelPicker.tsx",
+      "name": "ProviderModelPicker",
+      "line_start": 163,
+      "line_end": 1282,
+      "span": 1120
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/ui/src/features/workflows/workflow-board.tsx",
+      "name": "createBoard",
+      "line_start": 390,
+      "line_end": 1497,
+      "span": 1108
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/ui/src/features/conversation/ComposerEditor.tsx",
+      "name": "ComposerEditor",
+      "line_start": 205,
+      "line_end": 1306,
+      "span": 1102
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/conversation/AgentRoutinesSettings.tsx",
+      "name": "AgentRoutinesSettings",
+      "line_start": 149,
+      "line_end": 1215,
+      "span": 1067
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/mobile/src/features/chat/components/chat-composer.tsx",
+      "name": "ChatComposer",
+      "line_start": 179,
+      "line_end": 1212,
+      "span": 1034
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/mobile/src/features/workspace/context/host-request-actions.ts",
+      "name": "createHostRequestActions",
+      "line_start": 722,
+      "line_end": 1695,
+      "span": 974
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/scripts/browser-secret-smoke.ts",
+      "name": "runSecretHandoffScenario",
+      "line_start": 99,
+      "line_end": 1046,
+      "span": 948
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/auth-api/src/content/privacy-policy.tsx",
+      "name": "PrivacyPolicy",
+      "line_start": 9,
+      "line_end": 955,
+      "span": 947
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/servers/ServerMembersSection.tsx",
+      "name": "createServerMembersSection",
+      "line_start": 107,
+      "line_end": 1034,
+      "span": 928
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/auth-api/src/content/terms.tsx",
+      "name": "Terms",
+      "line_start": 6,
+      "line_end": 891,
+      "span": 886
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/mobile/src/features/agents/screens/connected-screen.tsx",
+      "name": "ConnectedScreen",
+      "line_start": 352,
+      "line_end": 1207,
+      "span": 856
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/ui/src/features/conversation/threads/AgentThreadView.tsx",
+      "name": "AgentThreadView",
+      "line_start": 247,
+      "line_end": 1096,
+      "span": 850
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/mobile/src/features/chat/components/chat-message-list.tsx",
+      "name": "ChatMessageList",
+      "line_start": 1285,
+      "line_end": 2127,
+      "span": 843
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/conversation/ConversationComposer.tsx",
+      "name": "ConversationComposer",
+      "line_start": 69,
+      "line_end": 894,
+      "span": 826
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/conversation/stores/composer-actions.ts",
+      "name": "createComposerActions",
+      "line_start": 200,
+      "line_end": 1015,
+      "span": 816
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/tasks/TasksView.tsx",
+      "name": "TasksView",
+      "line_start": 139,
+      "line_end": 913,
+      "span": 775
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/agent-tasks/agent-tasks-state.ts",
+      "name": "createAgentTasks",
+      "line_start": 73,
+      "line_end": 836,
+      "span": 764
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/conversation/stores/voice-conversation-store.ts",
+      "name": "createVoiceConversation",
+      "line_start": 103,
+      "line_end": 863,
+      "span": 761
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/features/conversation/stores/browser-store.ts",
+      "name": "createBrowserStore",
+      "line_start": 85,
+      "line_end": 839,
+      "span": 755
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/ui/src/features/account/AccountLogin.tsx",
+      "name": "AccountLogin",
+      "line_start": 54,
+      "line_end": 789,
+      "span": 736
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/renderer/src/preview/landing-demo.ts",
+      "name": "createLandingDemoController",
+      "line_start": 88,
+      "line_end": 814,
+      "span": 727
+    }
+  ],
+  "file_hotspots": [
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/contracts/src/runtime-values.ts",
+      "inbound": 6961
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/effect-boundary.ts",
+      "inbound": 4715
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/scripts/team-api-routes-e2e.ts",
+      "inbound": 4357
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/contracts/src/team-protocol/admin-wire.ts",
+      "inbound": 3078
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/ui/src/text.tsx",
+      "inbound": 2547
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/contracts/src/ipc.ts",
+      "inbound": 2134
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/i18n/src/message.ts",
+      "inbound": 1713
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/mobile/src/features/settings/components/settings-content.tsx",
+      "inbound": 1670
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/logging/src/index.ts",
+      "inbound": 1646
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/protocol.ts",
+      "inbound": 1529
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/mailbox-store.ts",
+      "inbound": 1524
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/ui/src/item.tsx",
+      "inbound": 1366
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/packages/ui/src/button.tsx",
+      "inbound": 1267
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/mobile/src/shared/lib/text.ts",
+      "inbound": 1264
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/openbot-database.ts",
+      "inbound": 1247
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/database/database-rows.ts",
+      "inbound": 1229
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/scripts/stripe-flows-e2e.ts",
+      "inbound": 1113
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent-service.ts",
+      "inbound": 1039
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/src/backend/agent-store.ts",
+      "inbound": 1023
+    },
+    {
+      "file_path": "C:/CodexProjetos/openbot/apps/auth-api/src/server/request-auth.ts",
+      "inbound": 973
+    }
+  ]
+}

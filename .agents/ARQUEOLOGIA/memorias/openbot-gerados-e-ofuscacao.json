@@ -1,0 +1,11 @@
+{
+  "slug": "openbot-gerados-e-ofuscacao",
+  "scope": "project",
+  "title": "OpenBot: superficie gerada e ausencia de ofuscacao",
+  "trigger": "Ao medir tamanho, revisar bundle ou procurar codigo morto/ofuscado no openbot",
+  "body": "Superficie gerada: packages/whatsapp/vendor/baileys/WAProto/index.js tem 97.691 linhas; packages/i18n/src/messages tem 1.620 arquivos .ts em 15 locales; plugin-catalog.generated.ts (auth-api e mobile) e routeTree.gen.ts sao gerados. Nao ha .min.js versionado, nao ha eval/new Function reais (as 45 ocorrencias sao metodo .eval de harness/shader) e atob aparece 10 vezes em codigo legitimo de base64. O vendor Baileys responde por 174 arquivos e 161.712 linhas do total.",
+  "tags": [
+    "#openbot/gerados",
+    "#openbot/ofuscacao"
+  ]
+}

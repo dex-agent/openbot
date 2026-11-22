@@ -1,0 +1,38 @@
+{
+  "files": 7701,
+  "bytes": 74527347,
+  "lines": 1645650,
+  "by_ext": {
+    ".ts": {
+      "files": 5837,
+      "lines": 1197276,
+      "bytes": 56924581
+    },
+    ".js": {
+      "files": 18,
+      "lines": 99061,
+      "bytes": 4495973
+    },
+    ".tsx": {
+      "files": 1838,
+      "lines": 348306,
+      "bytes": 13066959
+    },
+    ".mjs": {
+      "files": 6,
+      "lines": 970,
+      "bytes": 38388
+    },
+    ".cjs": {
+      "files": 2,
+      "lines": 37,
+      "bytes": 1446
+    }
+  },
+  "bom_files": [],
+  "crlf_files": [],
+  "non_utf8": [],
+  "nul_files": [],
+  "high_files": 1994,
+  "errors": []
+}

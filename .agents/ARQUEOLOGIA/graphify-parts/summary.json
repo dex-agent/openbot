@@ -1,0 +1,158 @@
+{
+  "parts": {
+    "src/renderer": {
+      "exit": 0,
+      "seconds": 156.6,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\src-renderer\\graphify-out\\graph.json"
+    },
+    "src/backend": {
+      "exit": 0,
+      "seconds": 88.2,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\src-backend\\graphify-out\\graph.json"
+    },
+    "apps/auth-api": {
+      "exit": 0,
+      "seconds": 58.7,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\apps-auth-api\\graphify-out\\graph.json"
+    },
+    "apps/mobile/src/features": {
+      "exit": 0,
+      "seconds": 142.8,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\apps-mobile-src-features\\graphify-out\\graph.json"
+    },
+    "apps/mobile/src/app": {
+      "exit": 0,
+      "seconds": 9.1,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\apps-mobile-src-app\\graphify-out\\graph.json"
+    },
+    "apps/mobile/src/shared": {
+      "exit": 0,
+      "seconds": 7.7,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\apps-mobile-src-shared\\graphify-out\\graph.json"
+    },
+    "apps/mobile/plugins": {
+      "exit": 0,
+      "seconds": 4.5,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\apps-mobile-plugins\\graphify-out\\graph.json"
+    },
+    "scripts": {
+      "exit": 0,
+      "seconds": 141.5,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\scripts\\graphify-out\\graph.json"
+    },
+    "packages/ui": {
+      "exit": 0,
+      "seconds": 102.3,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\packages-ui\\graphify-out\\graph.json"
+    },
+    "packages/contracts": {
+      "exit": 0,
+      "seconds": 35.1,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\packages-contracts\\graphify-out\\graph.json"
+    },
+    "packages/whatsapp": {
+      "exit": 0,
+      "seconds": 4.6,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\packages-whatsapp\\graphify-out\\graph.json"
+    },
+    "packages/team-client": {
+      "exit": 0,
+      "seconds": 11.6,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\packages-team-client\\graphify-out\\graph.json"
+    },
+    "packages/logging": {
+      "exit": 0,
+      "seconds": 3.7,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\packages-logging\\graphify-out\\graph.json"
+    },
+    "packages/telemetry": {
+      "exit": 0,
+      "seconds": 3.6,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\packages-telemetry\\graphify-out\\graph.json"
+    },
+    "packages/user-errors": {
+      "exit": 0,
+      "seconds": 9.0,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\packages-user-errors\\graphify-out\\graph.json"
+    },
+    "packages/brand": {
+      "exit": 0,
+      "seconds": 13.5,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\packages-brand\\graphify-out\\graph.json"
+    },
+    "tools": {
+      "exit": 0,
+      "seconds": 4.6,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\tools\\graphify-out\\graph.json"
+    },
+    "remote": {
+      "exit": 0,
+      "seconds": 7.2,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\remote\\graphify-out\\graph.json"
+    },
+    "marketplace": {
+      "exit": 0,
+      "seconds": 10.2,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\marketplace\\graphify-out\\graph.json"
+    },
+    ".storybook": {
+      "exit": 0,
+      "seconds": 4.1,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\_storybook\\graphify-out\\graph.json"
+    },
+    "resources": {
+      "exit": 0,
+      "seconds": 11.5,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\resources\\graphify-out\\graph.json"
+    },
+    ".agents": {
+      "exit": 0,
+      "seconds": 5.5,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\_agents\\graphify-out\\graph.json"
+    },
+    "apps/mobile-updates": {
+      "exit": 0,
+      "seconds": 4.0,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\apps-mobile-updates\\graphify-out\\graph.json"
+    },
+    "apps/site-router": {
+      "exit": 0,
+      "seconds": 3.5,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\apps-site-router\\graphify-out\\graph.json"
+    },
+    "apps/status": {
+      "exit": 0,
+      "seconds": 4.0,
+      "timeout": false,
+      "graph": ".agents/GRAPHIFY-PARTS\\apps-status\\graphify-out\\graph.json"
+    }
+  },
+  "graphs_merged": 26,
+  "merge_exit": 0,
+  "merge_out": ".agents/GRAPHIFY/graphify-out/graph.json",
+  "merge_exists": true
+}
