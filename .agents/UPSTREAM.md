@@ -31,3 +31,10 @@ Modelo de trabalho deste repositorio:
 - Base atualizada: rodar `bun run --cwd apps/auth-api db:migrate:local` antes de subir o app. D1 desatualizado responde `D1 call failed` e todo refresh de servidores falha com 500.
 - Sintoma de conta errada: `auth.getState().user.id` diferente do id que o web client usa; `servers.list()` sem o servidor esperado e web/mobile mostrando "O computador ficou offline".
 - Verificacao rapida: `servers.list()` deve mostrar o servidor com `state: "online"`, `role: "owner"` e `apiUrl: wss://signal-us.openbot.run/v1/signal`.
+
+## Recuperacao de start (2026-11-22)
+
+- Sintoma: dialogo "O OpenBot nao conseguiu iniciar — disk I/O error" com o banco intacto (`PRAGMA quick_check` = ok).
+- Causa medida: instancia anterior encerrada com `taskkill /F` deixou o perfil travado (lockfile e cache do Chromium com "Acesso negado"); o novo processo nao abriu o SQLite em WAL.
+- Rota: encerrar todas as instancias do app, confirmar que nao ha `electron.exe`, e subir de novo. Nao forcar kill; fechar a janela ou usar o stop do dev.
+- Higiene: manter espaco livre em C: (nesta maquina havia 7,2 GB livres com 93% de uso) — cache do Chromium falha sob pressao de disco.
