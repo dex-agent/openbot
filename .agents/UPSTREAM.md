@@ -26,6 +26,7 @@ Modelo de trabalho deste repositorio:
 - 2026-11-21: `origin/main` em `6f9c9b01c` (0.76.1). Tetos de 200 confirmados no upstream; correcao nossa `9e7638b03` publicada na branch `fix/skill-picker-200-limit` e mergeada no fork pelo PR #1 (squash `4034585bba`), que agora e a nossa `main`.
 - 2026-11-22T12:00Z: `origin/main` em `d2a5ac7f7`; 5 commits novos desde a nossa base (nenhum toca `src/backend/home-skills.ts`, `src/main/skill-folder-discovery.ts` ou `packages/ui/src/features/conversation/`).
 - 2026-11-23T12:00Z: `origin/main` em `72f80f561`; 212 commits novos desde a nossa base. Nenhum commit upstream toca `src/backend/home-skills.ts` nem `src/main/skill-folder-discovery.ts` (os tetos deles continuam em 200; os nossos 2000/5000 seguem intactos). `packages/ui/src/features/conversation/` recebeu 39 commits upstream, mas o nosso fix do picker (`4034585bba`) nao toca esse diretorio — sem sobreposicao com o port.
+- 2026-11-24: `main` da casa rebaseada sobre `72f80f561` (8 commits preservados, 0 atras). Conflito unico em `AGENTS.md`, resolvido mantendo a secao Non-negotiable do upstream e o Escopo de seguranca ofensiva da casa. Instalador refeito: `dist/OpenBot-0.76.1-x64.exe`, 234.652.108 bytes, sha256 `3274173c53ddeb8d3bfd180261292b1a4a9fcb59ba9f54a45edcd03d39841de2`. Sem push.
 
 ## Invariantes de execucao (2026-11-22)
 
