@@ -8,6 +8,7 @@ Fonte viva vence memória.
 | STALENESS-ARTEFATOS-DERIVADOS | sessão do projeto (fiscal: `dex-fechamento-projeto-atualizado`) | antes de ler ou citar CRG, Graphify, PLAYBOOK, INDEX, receipt de capacidade ou fluxo de decisão | comparação de 3 números abaixo; regenerar antes de citar |
 | MERGE-CHECK-HOOK-PRE-MERGE | hook do repo `.githooks/pre-merge-commit` | todo `git merge` local neste repo | `tools/hooks/merge-check.conf` + escape `MERGE_CHECK_SKIP=1` |
 | CRG-LOCAL-STRUCTURAL-GRAPH | sessão do projeto | review estrutural, impacto, arquitetura, antes de citação do grafo | `code-review-graph status --repo . --data-dir .agents/CODE-REVIEW-GRAPH` |
+| OPENBOT-PERFIL-DEV-POR-WORKTREE | sessão do projeto | app "abre vazio" ou "perdeu os dados" depois de trocar o modo de launch | `scripts/dev-services.ts` `developmentInstanceIdForStart`; perfis em `%APPDATA%` |
 
 ## STALENESS-ARTEFATOS-DERIVADOS
 
@@ -34,6 +35,16 @@ Fonte viva vence memória.
 - **Onde**: `.agents/CODE-REVIEW-GRAPH/`, recibo em `.agents/CODE-REVIEW-GRAPH-INDEX.md` e ponteiro no `AGENTS.md`.
 - **E se?? o status disser INCOMPLETE?** → não citar números; rodar `build` até o status mostrar o commit atual e o build completo.
 - **E se?? o grafo não cobrir a linguagem?** → declarar a lacuna e usar fonte viva (rg, testes, documentação).
+
+## OPENBOT-PERFIL-DEV-POR-WORKTREE
+
+- **Quem**: sessão do projeto que inicia o app; dono da regra é `scripts/dev-services.ts`.
+- **Por que**: o nome da pasta de dados depende do modo de launch, não do código. `bun run dev --shared` usa `%APPDATA%\OpenBot Dev`; `bun run dev` sem `--shared` usa `OpenBot Dev wt-<sha256 do root>`; o app empacotado usa `%APPDATA%\OpenBot`. Trocar o modo parece "perda de dados" — o banco antigo continua intacto na outra pasta, com agentes e mensagens.
+- **Como**: antes de diagnosticar perda, ler o `--user-data-dir` do processo (`Get-CimInstance Win32_Process -Filter "Name='electron.exe'"`) e comparar com as pastas em `%APPDATA%`: a que tem `openbot.db` grande e WAL recente é a viva. Para voltar à mesma base, repetir o mesmo modo de launch.
+- **Quando**: app abre vazio, lista de agentes/threads muda, ou o usuário relata "sumiu tudo" após reiniciar.
+- **Onde**: `scripts/dev-services.ts` (`developmentInstanceIdForStart`, `developmentInstanceIdForWorktree`), `src/main/development-profile.ts` (`developmentUserDataName`), `scripts/dev-stack.ts status`.
+- **E se?? duas pastas tiverem `openbot.db` parecidos?** → comparar `projection_agents` / `projection_thread_messages` por contagem e data da última mensagem; o perfil maior e mais recente é o de trabalho.
+- **E se?? a pasta wt existir e o usuário quiser descartar?** → garimpar as threads (seed tem títulos fixos criados no mesmo segundo) e registrar `LIXEIRA` + `MANIFEST.md`; nunca copiar cookies, `Local State` ou credenciais.
 
 ## MERGE-CHECK-HOOK-PRE-MERGE
 
