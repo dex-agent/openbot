@@ -12,6 +12,7 @@ Fonte viva vence memória.
 | OPENBOT-ROTA-REDE-PRIVADA | sessão do projeto | celular/web não conecta com `webRTC/ice/failed` mesmo com o host aberto | `openbot-remote-network-route-v1.json`; Configurações → "Como os dispositivos se conectam" |
 | OPENBOT-UPDATE-SOURCE-FORK | sessão do projeto / quem publica build | app baixa ou instala versão do upstream e perde o fix do picker | `electron-builder.yml` `publish.owner`; `resources/app-update.yml` |
 | RITUAL-MEMORIA-BLOCO-OPENBOT | sessão do projeto | fechamento de todo bloco material; frases `APRENDIZADO-MEMORAVEL-CONTINUO` e `AUTO-MEMORY-ZCODE-GARIMPA-DEX-MEMORIA` | `~/.agents/AGENTS.md` + `~/.agents/CONTRACTS/`; `dex-memoria`; gate `dex-notas-citaveis` |
+| REBASE-BUILD-RELEASE-TEST-OPENBOT | sessão do projeto | todo rebase da `main` sobre `origin/main` | `bun install` + `dist:win` + teste executando + `git push --force-with-lease fork main` |
 
 ## STALENESS-ARTEFATOS-DERIVADOS
 
@@ -79,6 +80,17 @@ Fonte viva vence memória.
 - **E se?? o achado já foi gravado dentro do bloco?** → o fechamento só oferece edição, nunca pede permissão para gravar de novo.
 - **E se?? o destino estiver ambíguo (projeto, global, tema)?** → não inventar rota; estacionar com owner e `quando` até a decisão.
 - **E se?? a validação do lote acusar dívida antiga fora do corte?** → registrar a dívida como risco restante e exigir zero achados nos arquivos tocados.
+
+## REBASE-BUILD-RELEASE-TEST-OPENBOT
+
+- **Quem**: a sessão do projeto que executa o rebase; o dono autorizou este fluxo como padrão para todo rebase.
+- **Por que**: rebase sem build deixa o instalador velho e a regressão fica invisível. Medido em 2026-11-25: a base ja estava em 0.78.0 e o app instalado seguia 0.76.1; sem executar o build novo ninguém prova que ele abre.
+- **Como**: depois do rebase limpo, rodar `bun install --frozen-lockfile`; compilar com `PATH="/c/Windows/System32:$PATH" bun run dist:win`; conferir no asar `MAX_HOME_SKILLS = 2e3` e `MAX_SKILLS_PER_FOLDER = 5e3` e `owner: dex-agent` no `app-update.yml`; executar `dist/win-unpacked/OpenBot.exe` com `--user-data-dir` temporario e `--remote-debugging-port`, exigir a pagina `openbot-app://app/index.html` com titulo OpenBot e ler o print; registrar tamanho e sha256 no `UPSTREAM.md`; publicar com `git push --force-with-lease fork main`.
+- **Quando**: todo rebase da `main` sobre `origin/main`, antes de declarar o bloco concluido.
+- **Onde**: receita completa em `~/.agents/workflow/rebase-repo-build-release/WORKFLOW.md`; artefatos em `dist/win-unpacked/OpenBot.exe` e `dist/OpenBot-<versao>-x64.exe`; registro em `.agents/UPSTREAM.md`; remote `fork`.
+- **E se?? o build falhar?** → nao publicar; corrigir a causa e repetir o ciclo inteiro.
+- **E se?? o teste nao abrir a janela principal?** → inspecionar CDP e log; nao declarar pronto com so a dynamic island.
+- **E se?? o dono pedir GitHub Release?** → push de codigo nao cria release; release exige `gh` autenticado e assinatura Windows, senao o updater recusa.
 
 ## MERGE-CHECK-HOOK-PRE-MERGE
 
