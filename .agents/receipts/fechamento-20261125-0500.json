@@ -1,0 +1,146 @@
+{
+  "contract": "chato.fechamento.scan.v1",
+  "version": "1.5.0",
+  "scanned_at": "2026-11-25T01:57:48-03:00",
+  "repo": "C:\\CodexProjetos\\openbot",
+  "head": "bf5fb4e1f Point the updater at the fork instead of upstream",
+  "auto_memory": "C:\\Users\\jumper\\.zcode\\cli\\memories\\projects\\openbot-36104a4c398f2145\\memory\\MEMORY.md",
+  "read_only": true,
+  "strict": false,
+  "strict_fail": false,
+  "items": [
+    {
+      "id": "higiene",
+      "status": "ok",
+      "evidence": "receipt recente: .agents\\receipts\\higiene-20261125.json (0.1d <= 30d; filename)",
+      "owner": "dex-higiene-scan"
+    },
+    {
+      "id": "memoria-viva",
+      "status": "ok",
+      "evidence": "1 SPTs datados; INDEX/ACTIVE/HANDOFF presentes; HANDOFF em 2026-11-25",
+      "owner": "memoria-viva",
+      "warnings": []
+    },
+    {
+      "id": "changelog",
+      "status": "ok",
+      "evidence": "CHANGELOG.md presente",
+      "owner": "projeto-manter-changelog"
+    },
+    {
+      "id": "index_raiz",
+      "status": "ok",
+      "evidence": "INDEX.md presente (claims semanticas de orfaos: LLM confirma)",
+      "owner": "sessao (owner do indice)"
+    },
+    {
+      "id": "napkin",
+      "status": "ok",
+      "evidence": "napkin.md presente (contagens stale: LLM confirma)",
+      "owner": "napkin-projeto"
+    },
+    {
+      "id": "playbook",
+      "status": "missing",
+      "evidence": "PLAYBOOK.md ou tools/playbook/ ausente",
+      "owner": "dex-playbook-entrada"
+    },
+    {
+      "id": "garimpo",
+      "status": "ok",
+      "evidence": "12 auto-memorias recentes com correspondente nos roots dex-memoria",
+      "owner": "garimpeiro + dex-memoria",
+      "warnings": []
+    },
+    {
+      "id": "estacionamento",
+      "status": "n-a",
+      "evidence": "ESTACIONAMENTO/ ausente (nenhum item estacionado)",
+      "owner": "estacionamento"
+    },
+    {
+      "id": "pendencias",
+      "status": "ok",
+      "evidence": "3 abertas, 0 adiadas, 0 supersedidas, 0 concluidas; vivas: UPSTREAM-97-COMMITS-PORT, AUTO-UPDATE-SIGNING, NOTAS-CITAVEIS-DIVIDA-GLOBAL",
+      "owner": "dex-pendencias",
+      "warnings": []
+    },
+    {
+      "id": "gatilhos_vivos",
+      "status": "n-a",
+      "evidence": "12 memorias recentes; nenhum gatilho extraido",
+      "owner": "napkin-projeto"
+    },
+    {
+      "id": "temp_tmp",
+      "status": "ok",
+      "evidence": "TEMP/TMP ausentes ou vazios",
+      "owner": "sessao"
+    },
+    {
+      "id": "git",
+      "status": "stale",
+      "evidence": "tree suja (12): .agents/GATILHOS-VIVOS.md, .agents/UPSTREAM.md, .agents/HANDOFF.md, .agents/PENDENTES.md, .agents/PLAN-TASKS/ACTIVE.md, .agents/PLAN-TASKS/INDEX.md, .agents/TRACKER/, .agents/lembranca.md, .agents/memorias/, .agents/napkin.md, +2",
+      "owner": "dex-git-fechamento"
+    },
+    {
+      "id": "workflows_reutilizaveis",
+      "status": "n-a",
+      "owner": "dex-receita",
+      "evidence": "avaliacao do bloco ausente; fornecer --block-id e --workflow-review"
+    },
+    {
+      "id": "toolsbook",
+      "status": "n-a",
+      "applies": false,
+      "evidence": "sem TOOLSBOOK.json no projeto (livro nao adotado aqui; candidato ao dex-toolsbook)",
+      "owner": "dex-toolsbook"
+    },
+    {
+      "id": "receitas",
+      "status": "n-a",
+      "evidence": "avaliacao de reuso ausente/invalida (workflows_reutilizaveis=n-a) — ficha 5W2H nao cobravel aqui",
+      "owner": "dex-receita"
+    },
+    {
+      "id": "temp_fora_do_repo",
+      "owner": "sessao (artefato do bloco)",
+      "status": "n-a",
+      "evidence": "medido: 2 worktree(s) ligada(s), 0 em raiz de Temp; Temp do sistema nao varrida (sem --since) | nao medido: janela de inicio do bloco ausente (--since <ISO>): Temp do sistema nao varrida"
+    },
+    {
+      "id": "aprendizado_fresco",
+      "owner": "sessao + lentes ativas",
+      "status": "n-a",
+      "evidence": "ultima intervencao do dono nao informada (--last-intervention <ISO>): frescor do aprendizado nao medido"
+    },
+    {
+      "id": "formato_fechamento",
+      "owner": "sessao (autora do fechamento)",
+      "status": "n-a",
+      "evidence": "recibo do fechamento ausente: gerar com --closing-molde, preencher e passar --closing .agents/receipts/fechamento-closing-<carimbo>.json (dex.fechamento.closing.v1)"
+    }
+  ],
+  "red": [
+    "playbook",
+    "git"
+  ],
+  "red_count": 2,
+  "not_evaluated": [
+    "estacionamento",
+    "gatilhos_vivos",
+    "workflows_reutilizaveis",
+    "receitas",
+    "temp_fora_do_repo",
+    "aprendizado_fresco",
+    "formato_fechamento"
+  ],
+  "semantic_review_required": [
+    "index_raiz",
+    "napkin",
+    "receitas"
+  ],
+  "semantic_confirmed": [],
+  "warnings": []
+}

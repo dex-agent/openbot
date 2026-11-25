@@ -1,0 +1,53 @@
+{
+  "schema": "dex.hygiene.scan.v1",
+  "generated_at": "2026-11-25T04:56:40.941255+00:00",
+  "read_only": true,
+  "root": "C:\\CodexProjetos\\openbot",
+  "exclude_dirs": [],
+  "untracked_files": [
+    {
+      "path": "C:\\CodexProjetos\\openbot\\.agents\\TRACKER\\INDEX.md",
+      "status": "??"
+    },
+    {
+      "path": "C:\\CodexProjetos\\openbot\\.agents\\TRACKER\\issues\\0001-autorizar-perfil-externo-do-chrome.md",
+      "status": "??"
+    },
+    {
+      "path": "C:\\CodexProjetos\\openbot\\.agents\\lembranca.md",
+      "status": "??"
+    },
+    {
+      "path": "C:\\CodexProjetos\\openbot\\.agents\\memorias\\build-do-fork-nao-pode-herdar-o-publish-do-upstream-d3b01afa39c5.md",
+      "status": "??"
+    },
+    {
+      "path": "C:\\CodexProjetos\\openbot\\.agents\\memorias\\celular-nao-conecta-quando-a-rota-remota-esta-em-re-b429fa65589c.md",
+      "status": "??"
+    },
+    {
+      "path": "C:\\CodexProjetos\\openbot\\.agents\\receipts\\fechamento-20261125-0456.json",
+      "status": "??"
+    },
+    {
+      "path": "C:\\CodexProjetos\\openbot\\.agents\\receipts\\higiene-20261125.json",
+      "status": "??"
+    }
+  ],
+  "temp_files": [
+    {
+      "path": "C:\\CodexProjetos\\openbot\\.agents-backups\\AGENTS.md.20261121-2231.pre-align.bak"
+    }
+  ],
+  "backup_locations": [],
+  "generated_cache": [],
+  "doc_conflicts": [],
+  "total": 8,
+  "warnings": [],
+  "command": [
+    "git",
+    "status",
+    "--porcelain",
+    "--untracked-files=all"
+  ]
+}

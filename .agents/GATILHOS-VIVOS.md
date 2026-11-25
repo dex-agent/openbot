@@ -9,6 +9,9 @@ Fonte viva vence memória.
 | MERGE-CHECK-HOOK-PRE-MERGE | hook do repo `.githooks/pre-merge-commit` | todo `git merge` local neste repo | `tools/hooks/merge-check.conf` + escape `MERGE_CHECK_SKIP=1` |
 | CRG-LOCAL-STRUCTURAL-GRAPH | sessão do projeto | review estrutural, impacto, arquitetura, antes de citação do grafo | `code-review-graph status --repo . --data-dir .agents/CODE-REVIEW-GRAPH` |
 | OPENBOT-PERFIL-DEV-POR-WORKTREE | sessão do projeto | app "abre vazio" ou "perdeu os dados" depois de trocar o modo de launch | `scripts/dev-services.ts` `developmentInstanceIdForStart`; perfis em `%APPDATA%` |
+| OPENBOT-ROTA-REDE-PRIVADA | sessão do projeto | celular/web não conecta com `webRTC/ice/failed` mesmo com o host aberto | `openbot-remote-network-route-v1.json`; Configurações → "Como os dispositivos se conectam" |
+| OPENBOT-UPDATE-SOURCE-FORK | sessão do projeto / quem publica build | app baixa ou instala versão do upstream e perde o fix do picker | `electron-builder.yml` `publish.owner`; `resources/app-update.yml` |
+| RITUAL-MEMORIA-BLOCO-OPENBOT | sessão do projeto | fechamento de todo bloco material; frases `APRENDIZADO-MEMORAVEL-CONTINUO` e `AUTO-MEMORY-ZCODE-GARIMPA-DEX-MEMORIA` | `~/.agents/AGENTS.md` + `~/.agents/CONTRACTS/`; `dex-memoria`; gate `dex-notas-citaveis` |
 
 ## STALENESS-ARTEFATOS-DERIVADOS
 
@@ -42,9 +45,40 @@ Fonte viva vence memória.
 - **Por que**: o nome da pasta de dados depende do modo de launch, não do código. `bun run dev --shared` usa `%APPDATA%\OpenBot Dev`; `bun run dev` sem `--shared` usa `OpenBot Dev wt-<sha256 do root>`; o app empacotado usa `%APPDATA%\OpenBot`. Trocar o modo parece "perda de dados" — o banco antigo continua intacto na outra pasta, com agentes e mensagens.
 - **Como**: antes de diagnosticar perda, ler o `--user-data-dir` do processo (`Get-CimInstance Win32_Process -Filter "Name='electron.exe'"`) e comparar com as pastas em `%APPDATA%`: a que tem `openbot.db` grande e WAL recente é a viva. Para voltar à mesma base, repetir o mesmo modo de launch.
 - **Quando**: app abre vazio, lista de agentes/threads muda, ou o usuário relata "sumiu tudo" após reiniciar.
-- **Onde**: `scripts/dev-services.ts` (`developmentInstanceIdForStart`, `developmentInstanceIdForWorktree`), `src/main/development-profile.ts` (`developmentUserDataName`), `scripts/dev-stack.ts status`.
+- **Onde**: `scripts/dev-services.ts` (`developmentInstanceIdForStart`, `developmentInstanceIdForWorktree`), `src/main/development-profile.ts` (`developmentUserDataName`), `scripts/dev-stack.ts status`. Atalho de trabalho na Área de Trabalho: `OpenBot (dados da casa).lnk` → exe instalado com `--user-data-dir` do perfil `OpenBot Dev`.
 - **E se?? duas pastas tiverem `openbot.db` parecidos?** → comparar `projection_agents` / `projection_thread_messages` por contagem e data da última mensagem; o perfil maior e mais recente é o de trabalho.
 - **E se?? a pasta wt existir e o usuário quiser descartar?** → garimpar as threads (seed tem títulos fixos criados no mesmo segundo) e registrar `LIXEIRA` + `MANIFEST.md`; nunca copiar cookies, `Local State` ou credenciais.
+
+## OPENBOT-ROTA-REDE-PRIVADA
+
+- **Quem**: a sessão do projeto que diagnostica conexão de celular ou web; dono do comportamento é o par `src/renderer/src/features/team/team-webrtc.ts` + `src/main/ipc/app-handlers.ts`.
+- **Por que**: a preferência `route: "private"` ("Rede privada", Tailscale/Wi-Fi) faz o host anunciar `iceServers: []` e filtrar candidatos para a rede local. Celular fora dessa rede falha com `webRTC/ice/failed` mesmo com o host aberto e o signal conectado. Medido em 2026-11-24: a preferência do perfil Dev estava `private` e o celular em dados móveis não conectava.
+- **Como**: ler `%APPDATA%\OpenBot Dev\openbot-remote-network-route-v1.json`; no app, Configurações → "Como os dispositivos se conectam" → **"Pelo OpenBot"** (aplica na hora via `setRemoteNetworkRoute`). Conferir o host: conexão TCP estabelecida com `signal-us.openbot.run` e `logs/main/main.log` sem erro de signal.
+- **Quando**: celular/web mostra "Carregando Servidor de …" e `webRTC/ice/failed`; ou a conexão só funciona no mesmo Wi-Fi.
+- **Onde**: `src/renderer/src/features/team/team-webrtc.ts` (`iceServers: state.privateNetwork ? [] : iceServers`), `src/main/remote-network-route-preference-store.ts`, `packages/contracts/src/ipc-remote-sessions.ts` (`REMOTE_NETWORK_ROUTES`), arquivo JSON no perfil.
+- **E se?? o usuário quiser a rota privada e conexão fora de casa?** → a rota privada exige Tailscale no celular e os dois na mesma tailnet; sem isso, usar "Pelo OpenBot".
+- **E se?? o arquivo já estiver `openbot` e ainda falhar?** → medir o relay TURN e o signal antes de concluir "host offline"; abrir o log, não adivinhar.
+
+## OPENBOT-UPDATE-SOURCE-FORK
+
+- **Quem**: a sessão que gera ou instala build; donos são `electron-builder.yml` (bloco `publish`) e `resources/app-update.yml` do app instalado.
+- **Por que**: com `publish.owner: nightly-labs`, o `electron-updater` baixa o release do upstream e instala por cima da nossa build, apagando o fix `MAX_HOME_SKILLS = 2000` / `MAX_SKILLS_PER_FOLDER = 5000`. Medido em 2026-11-24: `OpenBot-0.77.0-x64.exe` (236 MB) baixado do upstream em `%LOCALAPPDATA%\openbot-updater\pending`.
+- **Como**: manter `publish.owner: dex-agent` no `electron-builder.yml` e no `app-update.yml` do app instalado; apagar `pending` quando houver download; recompilar com `bun run dist:win` e PATH com `/c/Windows/System32` (bsdtar). O fork não publica releases, então a checagem termina em `ERR_UPDATER_NO_PUBLISHED_VERSIONS` — sem update.
+- **Quando**: antes de gerar ou instalar build; ao ver "Nova atualização" ou arquivo em `openbot-updater`.
+- **Onde**: `electron-builder.yml`, `dist/win-unpacked/resources/app-update.yml`, `%LOCALAPPDATA%\openbot-updater`, `docs/RELEASING.md` ("updates are published through GitHub Releases").
+- **E se?? quisermos auto-update de verdade?** → precisa de release no fork + assinatura Windows (Azure Artifact Signing); sem assinatura o `src/main/windows-update-signature.ts` recusa. Cloudflare não serve para update do desktop.
+- **E se?? o update do upstream já instalou?** → conferir `MAX_HOME_SKILLS = 2e3` no `app.asar`; se ausente, reinstalar o nosso `dist/OpenBot-0.76.1-x64.exe`.
+
+## RITUAL-MEMORIA-BLOCO-OPENBOT
+
+- **Quem**: a sessão do projeto no fechamento de cada bloco material; dona global do ritual é a plaquinha `APRENDIZADO-MEMORAVEL-CONTINUO`, com espelho obrigatório `AUTO-MEMORY-ZCODE-GARIMPA-DEX-MEMORIA`.
+- **Por que**: o dono não deve repetir o pedido em cada janela. Sem ficha local, uma janela fria neste repo não encontra o ritual e o ouro do bloco fica no chat.
+- **Como**: investigar a sessão com as lentes `entrevista-com-docs`, `interrogador-documental` e `investigador-socratico`; manter `garimpeiro` e `estacionamento` ativos; achado forte operacional grava no `dex-memoria v2 remember` (project ou global) e valida com `consciencia-memorias` (`validate-memory-batch.py --root <root>`); achado notável de referência grava pelo gate `dex-notas-citaveis emit` e fecha com `check`; tropeço de ferramenta vira nota ou ficha tática. O fechamento informa 🧠 memoráveis, 🚧 tropeços e 🔥 gatilhos L1 usados, oferece EDIÇÃO do que já foi gravado e roda `dex-fechamento-projeto-atualizado`.
+- **Quando**: todo fechamento de bloco material e sempre que o dono usar as frases `APRENDIZADO-MEMORAVEL-CONTINUO` ou `AUTO-MEMORY-ZCODE-GARIMPA-DEX-MEMORIA`; `AUTO-MEMORY` também dispara quando uma auto-memory do host ZCode for gravada ou atualizada.
+- **Onde**: `~/.agents/AGENTS.md` (plaquinhas), `~/.agents/CONTRACTS/APRENDIZADO-MEMORAVEL-CONTINUO.md` e `AUTO-MEMORY-ZCODE-GARIMPA-DEX-MEMORIA.md`, `C:\CodexProjetos\dex-memoria\SKILL.md` (entrada cotidiana), gate em `~/.agents/skills/dex-notas-citaveis/scripts/gate-notas-citaveis.py`.
+- **E se?? o achado já foi gravado dentro do bloco?** → o fechamento só oferece edição, nunca pede permissão para gravar de novo.
+- **E se?? o destino estiver ambíguo (projeto, global, tema)?** → não inventar rota; estacionar com owner e `quando` até a decisão.
+- **E se?? a validação do lote acusar dívida antiga fora do corte?** → registrar a dívida como risco restante e exigir zero achados nos arquivos tocados.
 
 ## MERGE-CHECK-HOOK-PRE-MERGE
 
