@@ -5,6 +5,8 @@
 
 - gerar instalador do OpenBot, ver atualizacao baixada ou publicar release -> [Build do fork nao pode herdar o publish do upstream](memorias/build-do-fork-nao-pode-herdar-o-publish-do-upstream-d3b01afa39c5.md) [[memorias/build-do-fork-nao-pode-herdar-o-publish-do-upstream-d3b01afa39c5|Build do fork nao pode herdar o publish do upstream]] #openbot/distribuicao ^build-do-fork-nao-pode-herdar-o-publish-do-upstream-d3b01afa39c5
 
+- perfil da casa, atalho do OpenBot, migrar dados do OpenBot Dev -> [Perfil da casa mora no default do OpenBot](memorias/perfil-da-casa-no-default-openbot-20261126.md) [[memorias/perfil-da-casa-no-default-openbot-20261126|Perfil da casa mora no default do OpenBot]] #openbot/perfil ^perfil-da-casa-no-default-openbot-20261126
+
 - cdp-trusted-input-synthetic-events -> [cdp-trusted-input-synthetic-events](memorias/cdp-trusted-input-synthetic-events-b32b0b528596.md) [[memorias/cdp-trusted-input-synthetic-events-b32b0b528596|cdp-trusted-input-synthetic-events]] #auto-memory/reference ^cdp-trusted-input-synthetic-events-b32b0b528596
 
 - equipe-dev-team-charter -> [equipe-dev-team-charter](memorias/equipe-dev-team-charter-e550b727bc59.md) [[memorias/equipe-dev-team-charter-e550b727bc59|equipe-dev-team-charter]] #auto-memory/project ^equipe-dev-team-charter-e550b727bc59
